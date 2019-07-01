@@ -49,7 +49,7 @@ Once activated the Includes menu will appear within the WordPress primary menu.
 
 = 3.0.0 =
 * Released: 2019-07-01
-* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#3.0.0
+* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#300
 
 
 == Screenshots ==
