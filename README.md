@@ -1,16 +1,8 @@
+![Includes for WordPress](https://raw.githubusercontent.com/ChrisWinters/includes/master/svn/assets/banner-1544x500.png "WordPress Plugin - Includes for WordPress - Include Content Anywhere!")
+
 # Includes for WordPress
-* **Plugin Name:** Includes for WordPress
-* **Contributors:** Chris Winters
-* **Requires at least:** 4.6
-* **Requires PHP:** 5.6
-* **Tested up to:** 5.2.2
-* **Stable tag:** 3.0.0
-* **License:** GNU GPLv3
-* **License URI:** /LICENSE
 
-![Includes for WordPress](https://raw.githubusercontent.com/ChrisWinters/includes/master/svn/assets/banner-772x250.png "WordPress Plugin - Includes for WordPress - Include Content Anywhere!")
-
-WordPress Plugin - Includes for WordPress - Include Content Anywhere!
+**WordPress Plugin - Includes for WordPress - Include Content Anywhere!**
 
 
 ## Description
