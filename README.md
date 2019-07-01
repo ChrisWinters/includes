@@ -8,7 +8,7 @@
 * **License:** GNU GPLv3
 * **License URI:** /LICENSE
 
-![Includes for WordPress](https://github.com/ChrisWinters/includes/blob/master/svn/assets/banner-772-250.png "WordPress Plugin - Includes for WordPress - Include Content Anywhere!")
+![Includes for WordPress](https://raw.githubusercontent.com/ChrisWinters/includes/master/svn/assets/banner-772x250.png "WordPress Plugin - Includes for WordPress - Include Content Anywhere!")
 
 WordPress Plugin - Includes for WordPress - Include Content Anywhere!
 
