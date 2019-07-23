@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Includes for WordPress
+ * Plugin Name: Includes
  * Plugin URI: https://includesforwp.com/
- * Description: Include Content Anywhere!
+ * Description: Includes for WordPress - Include Content Anywhere!
  * Version: 3.0.0
  * License: GNU GPLv3
  * Copyright ( c ) 2019 Chris W.

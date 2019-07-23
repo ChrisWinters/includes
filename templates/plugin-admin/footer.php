@@ -29,7 +29,10 @@ if ( false === defined( 'ABSPATH' ) ) {
 ?>
 </div></div><!-- .postbox & inside -->
 </div><!-- .post-body-content -->
-	<br class="clear" />
+
+<div id="postbox-container-1" class="postbox-container"><?php require_once dirname( INCLUDES_FILE ) . '/templates/plugin-admin/sidebar.php'; ?></div>
+
+<br class="clear" />
 </div></div><!-- .poststuff and post-body -->
 	<div class="clearfix">
 		<div class="float-left text-left"><small>&#9829; <?php esc_html_e( 'Includes for WordPress', 'includes' ); ?></small></div>

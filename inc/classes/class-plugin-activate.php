@@ -38,6 +38,9 @@ final class Plugin_Activate {
 			wp_die( esc_html__( 'WordPress 3.8 is required. Please upgrade WordPress and try again.', 'includes' ) );
 		}
 
+		// Skip Freemius Connection.
+		includes_fs()->skip_connection( null, true );
+
 		/*
 		 * Remove rewrite rules and then recreate rewrite rules.
 		 * https://developer.wordpress.org/reference/functions/flush_rewrite_rules/

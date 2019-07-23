@@ -2,6 +2,7 @@
 /**
  * Manager Class
  *
+ * @category   WordPress
  * @package    Includes
  * @subpackage Classes
  * @author     Chris Winters <chrisw@null.net>

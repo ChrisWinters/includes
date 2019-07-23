@@ -1,3 +1,14 @@
+The Includes WordPress license is comprised of two parts:
+
+(1) Excluding WordPress core functions and features, all plugin parts
+including but not limited to template HTML/CSS marketup, images, design,
+and custom PHP is licensed according to the terms of your purchase.
+
+Read more about licensing here: https://includesforwp.com/license/
+
+(2) WordPress core functions and features including HTML, CSS, Images,
+Icons, Logos, etc are licensed under General Public License (GPL).
+
                    GNU GENERAL PUBLIC LICENSE
                     Version 3, 29 June 2007
 

@@ -34,9 +34,12 @@ if ( true === function_exists( 'includes_fs' ) ) {
                 'is_premium'     => false,
                 'has_addons'     => false,
                 'has_paid_plans' => true,
-                'anonymous_mode' => true,
                 'is_live'        => true,
                 'menu'           => [
+                'account'    => true,
+                'contact'    => false,
+                'support'    => false,
+                'pricing'    => false,
                 'slug'       => 'edit.php?post_type=includes',
                 'first-path' => 'edit.php?post_type=includes&page=includes&tab=settings',
             ],

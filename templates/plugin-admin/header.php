@@ -35,5 +35,5 @@ echo wp_kses_post( $this->tabs() );
 ?>
 
 <div id="poststuff">
-<div id="post-body" class="metabox-holder columns-1"><div id="post-body-content">
+<div id="post-body" class="metabox-holder columns-2"><div id="post-body-content">
 <div class="postbox"><div class="inside">

@@ -1,6 +1,6 @@
 === Includes for WordPress ===
-Plugin Name: Includes for WordPress
-Contributors: Chris Winters
+Plugin Name: Includes
+Contributors: Chris Winters, freemius
 Requires at least: 4.6
 Requires PHP: 5.6
 Tested up to: 5.2.2
@@ -8,12 +8,12 @@ Stable tag: 3.0.0
 License: GNU GPLv3
 License URI: /LICENSE
 
-WordPress Plugin - Includes for WordPress  - Include Content Anywhere!
+WordPress Plugin - Includes for WordPress - Include Content Anywhere!
 
 
 == Description ==
 
-Include Content Anywhere! Create, manage, published, and schedule custom posts directly into widgets, widget titles, menu items, posts, pages, custom post types (yes, WooCommerce too), and even theme templates. Create advertisments that can automatically update or randomly display. Split test opt-in forms or any other content. Published pre-created scheduled front pages based on holidays or promotions. Easily update duplicated content (like author bios, realtor requirements, shop guarantees, etc) all from a single location.
+Include Content Anywhere! Publish custom posts directly into widgets, widget titles, menu items, posts, pages, custom post types (yes, WooCommerce too), and even theme templates. Centralize the management of text widgets, locally hosted advertisements, and all repeated content blocks within posts/pages. Easily update duplicated content like email opt-in forms, author bio's, realtor requirements, shop guarantees, and much more - all from a single location!
 
 
 = For Support and Bugs =
@@ -45,11 +45,14 @@ Once activated the Includes menu will appear within the WordPress primary menu.
 * Save time, build smarter, and manage WordPress with less effort!
 
 
+
+
+
 == Changelog ==
 
 = 3.0.0 =
 * Released: 2019-07-01
-* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#300
+* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#3.0.0
 
 
 == Screenshots ==
