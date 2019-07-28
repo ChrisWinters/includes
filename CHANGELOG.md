@@ -1,5 +1,11 @@
 # Changelog
 
+# 3.0.1
+**2018-07-28 - Hotfix**
+
+* Added missing call to translate class
+* Moved posttype-includes.php to pro version
+
 # 3.0.0
 **2018-07-01 - Release**
 

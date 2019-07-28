@@ -1,10 +1,10 @@
 === Includes for WordPress ===
 Plugin Name: Includes
-Contributors: Chris Winters, freemius
+Contributors: tribalNerd, Chris Winters, freemius
 Requires at least: 4.6
 Requires PHP: 5.6
 Tested up to: 5.2.2
-Stable tag: 3.0.0
+Stable tag: 3.0.1
 License: GNU GPLv3
 License URI: /LICENSE
 
@@ -50,9 +50,9 @@ Once activated the Includes menu will appear within the WordPress primary menu.
 
 == Changelog ==
 
-= 3.0.0 =
-* Released: 2019-07-01
-* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#3.0.0
+= 3.0.1 =
+* Released: 2019-07-28
+* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#3.0.1
 
 
 == Screenshots ==

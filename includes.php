@@ -3,7 +3,7 @@
  * Plugin Name: Includes
  * Plugin URI: https://includesforwp.com/
  * Description: Includes for WordPress - Include Content Anywhere!
- * Version: 3.0.0
+ * Version: 3.0.1
  * License: GNU GPLv3
  * Copyright ( c ) 2019 Chris W.
  * Author: Chris W.
@@ -26,6 +26,7 @@ if ( false === defined( 'ABSPATH' ) ) {
 
 define( 'INCLUDES_DIR', __DIR__ );
 define( 'INCLUDES_FILE', __FILE__ );
+define( 'INCLUDES_VERSION', '3.0.1' );
 define( 'INCLUDES_PLUGIN_NAME', 'includes' );
 define( 'INCLUDES_SINGULAR_NAME', 'include' );
 define( 'INCLUDES_SETTING_PREFIX', 'includes_' );
