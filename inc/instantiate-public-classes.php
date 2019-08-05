@@ -31,11 +31,17 @@ $includes_posttype = new Posttype(
 		'capability_type'    => 'page',
 		'taxonomies'         => [ INCLUDES_PLUGIN_NAME ],
 		'rewrite'            => [ 'slug' => '' ],
-		'supports'           => [ 'title', 'editor', 'author', 'revisions', 'custom-fields' ],
+		'supports'           => [
+			'title',
+			'editor',
+			'author',
+			'revisions',
+			'custom-fields',
+		],
 	]
 );
-
 $includes_posttype->init();
+
 
 // Start Shortcode Register.
 $includes_shortcode_factory = new Factory_Shortcode();
@@ -49,5 +55,4 @@ $includes_shortcode_includes = $includes_shortcode_factory->create(
 		'taxonomy'   => INCLUDES_PLUGIN_NAME,
 	]
 );
-
 $includes_shortcode_includes->register();

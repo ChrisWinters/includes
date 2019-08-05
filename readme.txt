@@ -4,7 +4,7 @@ Contributors: tribalNerd, Chris Winters, freemius
 Requires at least: 4.6
 Requires PHP: 5.6
 Tested up to: 5.2.2
-Stable tag: 3.0.1
+Stable tag: 3.0.2
 License: GNU GPLv3
 License URI: /LICENSE
 
@@ -20,7 +20,7 @@ Include Content Anywhere! Publish custom posts directly into widgets, widget tit
 
 * [https://github.com/ChrisWinters/includes/issues](Submit an Issue) at the projects Github project to report a bug, any possible problem, or request a feature.
 * For questions use the email contact form located at [https://includesforwp.com/help/](https://includesforwp.com/help/) for a prompt reply.
-* For all other needs please use the [https://wordpress.org/support/plugin/multisite-robotstxt-manager/](WordPress Support) forum.
+* For all other needs please use the [https://wordpress.org/support/plugin/includes/](WordPress Support) forum.
 
 
 = How To Use =
@@ -50,9 +50,9 @@ Once activated the Includes menu will appear within the WordPress primary menu.
 
 == Changelog ==
 
-= 3.0.1 =
-* Released: 2019-07-28
-* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#3.0.1
+= 3.0.2 =
+* Released: 2019-07-29
+* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#302
 
 
 == Screenshots ==
