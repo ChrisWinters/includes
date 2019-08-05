@@ -42,6 +42,15 @@ $includes_posttype = new Posttype(
 );
 $includes_posttype->init();
 
+// Register Includes Posttype Template.
+$includes_posttype_template = new Posttype_Template(
+	[
+		'posttype' => INCLUDES_PLUGIN_NAME,
+		'template' => plugin_dir_path( INCLUDES_FILE ) . 'templates/posttype-includes.php',
+	]
+);
+$includes_posttype_template->init();
+
 
 // Start Shortcode Register.
 $includes_shortcode_factory = new Factory_Shortcode();
