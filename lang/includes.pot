@@ -1,0 +1,955 @@
+# Copyright (C) 2020 includes
+# This file is distributed under the same license as the includes package.
+msgid ""
+msgstr ""
+"Project-Id-Version: includes\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Chris W. <chrisw@null.net>\n"
+"Last-Translator: Chris W. <chrisw@null.net>\n"
+"Report-Msgid-Bugs-To: https://github.com/ChrisWinters/includes/issues\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: inc/instantiate-admin-classes.php:63
+msgid "Includes Code ( php, jquery, etc )"
+msgstr ""
+
+#: inc/classes/class-abstract-metabox.php:187, inc/classes/class-plugin-admin-save.php:429
+msgid "You are not authorized to perform this action."
+msgstr ""
+
+#: inc/classes/class-plugin-activate.php:38
+msgid "WordPress 3.8 is required. Please upgrade WordPress and try again."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:34
+msgid "Settings Updated."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:38
+msgid "Settings Update Failed."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:42
+msgid "A Selection Is Required."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:46
+msgid "Settings Deleted."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:50
+msgid "Settings Delete Failed."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:54
+msgid "Settings Imported."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:58
+msgid "Settings Import Failed."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:62
+msgid "Email Sent."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-notices.php:66
+msgid "Email Failed To Send."
+msgstr ""
+
+#: inc/classes/class-plugin-admin-save.php:292
+msgid "Includes Plugin Export Backup"
+msgstr ""
+
+#: inc/classes/class-plugin-admin-save.php:293
+msgid "Exported Plugin Data: "
+msgstr ""
+
+#: inc/classes/class-plugin-admin.php:56, inc/classes/class-plugin-admin.php:68, inc/classes/class-plugin-admin.php:124
+msgid "Settings"
+msgstr ""
+
+#: inc/classes/class-plugin-admin.php:57, templates/plugin-admin/documents.php:39
+msgid "Import/Export"
+msgstr ""
+
+#: inc/classes/class-plugin-admin.php:58, inc/classes/class-plugin-admin.php:69
+msgid "Documentation"
+msgstr ""
+
+#: inc/classes/class-posttype-columns.php:80, inc/classes/class-posttype-columns.php:88
+msgid "Include Name"
+msgstr ""
+
+#: inc/classes/class-posttype-columns.php:81, inc/classes/class-posttype-columns.php:89
+msgid "Shortcode"
+msgstr ""
+
+#: inc/classes/class-posttype-columns.php:82, inc/classes/class-taxonomy.php:101
+msgid "Categories"
+msgstr ""
+
+#: inc/classes/class-posttype-columns.php:83, inc/classes/class-posttype-columns.php:90
+msgid "Created By"
+msgstr ""
+
+#: inc/classes/class-posttype-columns.php:84, inc/classes/class-posttype-columns.php:91
+msgid "Published"
+msgstr ""
+
+#: inc/classes/class-posttype.php:397
+msgid "Add New"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:399, inc/classes/class-taxonomy.php:227
+msgid "Add New %s"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:401
+msgid "New %s"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:403, inc/classes/class-taxonomy.php:223
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#. translators: %s Plugin Plural Name.
+#: inc/classes/class-posttype.php:405, inc/classes/class-posttype.php:407
+msgid "View %s"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#. translators: %s Plugin Plural Name.
+#: inc/classes/class-posttype.php:409, inc/classes/class-taxonomy.php:215
+msgid "Search %s"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:411, inc/classes/class-taxonomy.php:219
+msgid "Parent %s"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#: inc/classes/class-posttype.php:413
+msgid "No %s To Display"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#: inc/classes/class-posttype.php:415
+msgid "No %s Found in Trash"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:417
+msgid "%s Archives"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:419
+msgid "%s Attributes"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:421
+msgid "%s List"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-posttype.php:423
+msgid "%s List Navigation"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#: inc/classes/class-posttype.php:425
+msgid "Insert Into %s"
+msgstr ""
+
+#. translators: %s Plugin Plural Name.
+#: inc/classes/class-posttype.php:427
+msgid "Filter %s"
+msgstr ""
+
+#: inc/classes/class-taxonomy-meta.php:146
+msgid "Includes Shortcode"
+msgstr ""
+
+#: inc/classes/class-taxonomy-meta.php:153, templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:109
+msgid "Shortcode Attributes"
+msgstr ""
+
+#: inc/classes/class-taxonomy.php:102
+msgid "Category"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-taxonomy.php:217
+msgid "All %s"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-taxonomy.php:221
+msgid "Parent %s:"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-taxonomy.php:225
+msgid "Update %s"
+msgstr ""
+
+#. translators: %s Plugin Singular Name.
+#: inc/classes/class-taxonomy.php:229
+msgid "New %s Name"
+msgstr ""
+
+#: templates/plugin-admin/cleanup.php:34
+msgid "delete all settings"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:29
+msgid "Plugin Documentation"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:31
+msgid "WordPress Plugin - Includes for WordPress - Include Content Anywhere!"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:36
+msgid "Table of Contents"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41
+msgid "Basics"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:307, templates/plugin-admin/settings.php:38
+msgid "Plugin Settings"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:39
+msgid "Code Shortcode"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:447
+msgid "Includes within Includes"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41
+msgid "Example Uses"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:47
+msgid "The Basics"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:52
+msgid "Once activated the plugin creates a custom post type, taxonomy, and shortcodes; All other plugin related settings are inactive by default."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:59
+msgid "Once activated the plugin creates a custom post type, taxonomy, and customizable shortcodes; All other plugin related settings are inactive by default."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:69
+msgid "To use the plugin; publish an Includes post ( Includes menu > %1$sAdd New%2$s link ). Then use the provided shortcode to display the content within other Includes, posts, pages, widgets, menus, templates, etc."
+msgstr ""
+
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#: templates/plugin-admin/documents.php:83
+msgid "The Includes shortcode looks like %1$spost-slug%2$s. The 'slug' relates to the post slug for the published Include."
+msgstr ""
+
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#: templates/plugin-admin/documents.php:98
+msgid "The default shortcode looks like %1$spost-slug%2$s and the default category shortcode looks like %1$scategory-slug%2$s. Both the post and category slugs relate to posts/categories published under the Includes post type."
+msgstr ""
+
+#. translators: %1$s Shortcode Example. %2$s Shortcode Example. %3$s Shortcode Example. %4$s Shortcode Example.
+#: templates/plugin-admin/documents.php:115
+msgid "The %1$s shortcode ( and if enabled the %2$s shortcode ) requires either the %3$s or %4$s attributes for the shortcode to function property."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:124
+msgid "Default shortcodes"
+msgstr ""
+
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#: templates/plugin-admin/documents.php:128, templates/plugin-admin/documents.php:150
+msgid "%1$spost-slug%2$s"
+msgstr ""
+
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#: templates/plugin-admin/documents.php:139, templates/plugin-admin/documents.php:161, templates/plugin-admin/documents.php:184, templates/plugin-admin/documents.php:195, templates/plugin-admin/documents.php:261
+msgid "%1$scategory-slug%2$s"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:146
+msgid "If enabled"
+msgstr ""
+
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#: templates/plugin-admin/documents.php:172
+msgid "Additionally, when the %1$scategory-slug%2$s shortcode is used two extra attributes can be applied: %3$s and %4$s"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:190
+msgid "Combined Attributes"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:201
+msgid "Orderby"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:206
+msgid "%1$s | No Order"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:212
+msgid "%1$s | Post ID"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:218
+msgid "%1$s | Published Date"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:224
+msgid "%1$s | Post Title"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:230
+msgid "%1$s | Post Slug"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:236
+msgid "%1$s | Randomize Order"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:242
+msgid "%1$s | Post Modified Date"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:267
+msgid "Order"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:272
+msgid "%1$s | Descending order ( default )"
+msgstr ""
+
+#. translators: %1$s Attribute.
+#: templates/plugin-admin/documents.php:278
+msgid "%1$s | Ascending Order"
+msgstr ""
+
+#. translators: %1$s Attribute. %2$s Attribute. %3$s Attribute. %4$s Attribute.
+#: templates/plugin-admin/documents.php:291
+msgid "The %1$s attribute does not use the %2$s, %3$s, or %4$s attributes as it only ever displays the content related to the slug."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:299
+msgid "Note"
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:313
+msgid "Click the %1$sSettings Tab%2$s to adjust optional plugin settings."
+msgstr ""
+
+#. translators: %1$s Open Shortcode. %2$s Close Shortcode.
+#: templates/plugin-admin/documents.php:325
+msgid "While optional, it is recommended you enable \"Display Shortcodes on Category Term Pages\" to display the %1$scategory-slug%2$s shortcode on category term pages. Once enabled you can view the shortcode by opening ( Includes menu > Categories menu link ) then click the edit link for a category. The shortcode input box( es ) will display at the bottom of the form list."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:333
+msgid "PHP Memory Limits"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:335
+msgid "Other than the mentioned setting above, all other settings will consume more PHP memory, while minor it is still more. The more features that get enabled, the more memory that PHP will use. If your hosting provider, theme or other plugins sometimes reach PHP memory limits, then you should avoid using the other features or at least use them sparingly."
+msgstr ""
+
+#. translators: %1$s Shortcode Example.
+#: templates/plugin-admin/documents.php:343
+msgid "The %1$s Shortcode"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:350
+msgid "Only enable this feature if you are actively using it - Super Admins Only!"
+msgstr ""
+
+#. translators: %1$s Shortcode Example.
+#: templates/plugin-admin/documents.php:357
+msgid "If enabled, the custom shortcode  %1$s can be used with the same attributes as the Includes plugin with the added benefit of using code/scripts, etc rather than only allowed HTML. A new metabox will appear under the main editor box named \"Includes code ( php, jquery, etc ).\" where the custom content can be added. As well, if enabled, a new input box with the  %1$s shortcode will display on both the Includes listing page( s ) and the category meta page."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:363
+msgid "WARNING"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:363
+msgid "The code you enter into \"code\" editor is raw unfiltered data for both input and output!!!"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:367
+msgid "Inline JavaScript"
+msgstr ""
+
+#. translators: %1$s JavaScript Attribute. %2$s JavaScript Attribute.
+#: templates/plugin-admin/documents.php:373
+msgid "Inline JavaScript will parse in its location before the rest of the page below it loads. This issue can be solved with the %1$s attribute, however the %2$s attribute also needs to be present, which inline JavaScript does not have. You can solve this issue by base64 encoding the JavaScript code ( not the opening and closing script tags ) and then sourcing the encoded text with the %1$s attribute."
+msgstr ""
+
+#. translators: %1$s Open Link. %1$s Close Link.
+#: templates/plugin-admin/documents.php:384
+msgid "Use the online tool %1$sBase64Code%2$s to encode your scripts."
+msgstr ""
+
+#. translators: %1$s JavaScript Example.
+#: templates/plugin-admin/documents.php:395
+msgid "Using the example below, ignore the opening and closing script tags and encode the JavaScript parts: %1$s"
+msgstr ""
+
+#. translators: %1$s JavaScript Example. %2$s Encoded String Example.
+#: templates/plugin-admin/documents.php:409
+msgid "Once encoded, %1$s encodes to %2$s"
+msgstr ""
+
+#. translators: %1$s Encoded String Example. %2$s JavaScript Attributes.
+#: templates/plugin-admin/documents.php:420
+msgid "The encoded text %1$s is then added to the %2$s attribute. In the example below replace ENCODED-JAVASCRIPT with the proper encoded text."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:438
+msgid "Using the alert example the script line becomes"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:442
+msgid "Both snips will function the same ( an alert box will pop saying boo! ) the only difference is the defer tag which will allow the page to fully load before the script runs."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:451
+msgid "Includes within Includes works when stacking one level deep in direct line ( parent -> child or child -> parent ). In rare cases, stacking Includes can cause issues with some themes and may consume more memory than your host provides - stack only when needed!"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:457
+msgid "A typical use case would be injecting html blocks into to a page to complete the document. For example, Includes for an opt-in form ( the child ), is included within a homepage Include ( the parent ). The parents Includes shortcode is then added to the actual published homepage post - and not another Include. This is a simple child -> parent stack."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:463
+msgid "Keeping the example in mind above, an incorrect usage example would be adding another child Include inside the opt-in form Include. Stacked together this would create child->child->parent, which the Plugin will not render."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:469
+msgid "The parent Include can include multiple child Includes, as long as the child Includes are not stacked within each other."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:475
+msgid "Includes Usage Examples"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:477
+msgid ">Use an Include anytime you repeat blocks of duplicate content across different pages, widgets, menus or come up with your own specialized needs."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:482
+msgid "Content Rotation"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:484
+msgid "Includes within categories can be rotated using both the category and orderby attributes together."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:486
+msgid "Example Shortcode"
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:491
+msgid "Create %1$snew Includes%2$s that will each contain the content to be rotated, assinging each to the same category."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:500
+msgid "Set the title to something helpful: \"Footer Widget Links - Group 1\" or any format you would like to follow."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:501
+msgid "Under the Categories Metabox, click + Add New Category and create a custom category to group related items into. Group them based on the location they will be Included at, ie: Sidebar, Footer Right Widget, etc."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:506
+msgid "Automatically Updating/Changing Homepage"
+msgstr ""
+
+#. translators: %1$s Html. %2$s Html.
+#: templates/plugin-admin/documents.php:511
+msgid "This requires %1$sgrouping related homepage Includes into the same category%2$s, %1$sscheduling the Includes for future release%2$s, and using the %1$sIncludes category shortcode%2$s to display the newest homepage Include."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:517, templates/plugin-admin/documents.php:627, templates/plugin-admin/documents.php:671
+msgid "Step 1"
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:522
+msgid "Create %1$snew Includes%2$s that will each contain the guts/body of the homepage content, creating unique variations for different promotions, holidays, visual changes, split tests, etc."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#. translators: %1$s Open link. %2$s Close link.
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:529, templates/plugin-admin/documents.php:639, templates/plugin-admin/documents.php:683
+msgid "Duplicate the above step( s ) for each new homepage variation. Use the %1$sWordPress.org hosted plugin%2$s to easily Duplicate Posts of any type."
+msgstr ""
+
+#. translators: %1$s HTML. %2$s HTML.
+#: templates/plugin-admin/documents.php:536
+msgid "%1$sSchedule future updates%2$s for page variations as you would any other post/page. You can also schedule the child Includes to update/change."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:547
+msgid "Set the title to something helpful: \"Homepage - Date | Promo X\" or any format you would like to follow."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:548
+msgid "Modify the post Permalink slug to something short and relevant: promo-x."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:549
+msgid "Under the Categories Metabox, click + Add New Category and create a custom homepage category to group related homepages into."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:550
+msgid "Build the page / add some content; temporary text will work for now or copy over your current homepage Page if you already have one."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:555
+msgid "Group related custom homepages into the same category."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:562
+msgid "Step 2"
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:567
+msgid "Edit your current homepage Page or %1$screate a new homepage Page%2$s that use the Includes category shortcode. Depending on how your homepage setup works, your homepage Page may have HTML ( like containers, etc ) within it or the Includes may contain all of the HTML."
+msgstr ""
+
+#. translators: %1$s . %2$s Close link.
+#: templates/plugin-admin/documents.php:574
+msgid "Add the %1$syour-category-slug%2$s to the page body. If you are using the Classic editor click the \"Text\" tab to paste the shortcode. If you're using the Gutenberg editor, click the + icon to Write your story, with the dialog box open select the Widgets panel, then click the Shortcode icon and enter the entire Includes category shortcode into the input box."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:584
+msgid "Set the title to \"Homepage\" and the Permalink slug to lowercase version \"homepage.\""
+msgstr ""
+
+#: templates/plugin-admin/documents.php:591
+msgid "Step 3"
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:596
+msgid "Open %1$sSettings > Reading%2$s."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:603
+msgid "Set the websites Homepage to use the new Homepage Page."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:606
+msgid "Under the \"Your homepage displays\" section, select the \"A static page\" option, then in the Homepage dropdown select the \"Homepage\" Page template."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:607
+msgid "Click the Save Changes button."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:612
+msgid "Step 4"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:615
+msgid "Validate your Website"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:617
+msgid "Check that the homepage is using the Homepage Page template and displaying the Homepage Include."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:618
+msgid "Inspect the homepage for any unexpected issues; typical issues include wrong sidebar or non-full width template."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:619
+msgid "Test that the homepage updates by duplicating the current Include Homepage ( Promo X ). Make a minor change ( reword a link/button ), then schedule the modified Include to publish a minute later. Wait a minute, refresh the homepage, and validate the page changed."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:620
+msgid "If the page does not update, chances are a cache-plugin is not refreshing when new content is published."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:625
+msgid "Advertisement Rotation"
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:632
+msgid "Create multiple %1$snew Includes%2$s that each contain matching advertisement layouts/formats."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:649
+msgid "Set the title to something helpful: \"Sponsor Name - 125x125\" or any format you would like to follow."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:650
+msgid "Modify the post Permalink slug to something short and relevant: sponsor-name-125x125."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:651
+msgid "Under the Categories Metabox, click + Add New Category and create a custom advertisement category to group related promotions into. Group them based on the location they will be Included at, ie: Sidebar, Footer Right Widget, etc."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:656
+msgid "Remember to group related advertisements into the same category."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:661
+msgid "Split Testing"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:663
+msgid "You are ready to split test if a page/website has enough unique visitors ( naturally via seo, ad buys, social campaigns, etc ) to create sustained sales ( leads, opt-ins, etc ) which are consistent enough to calculate both short and longterm conversion ratios."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:665
+msgid "Split tests should either target a single change that repeats ( like all call to action buttons at once ) or the entire page should change in some major way, like a different design, totally new copy, or some other major change."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:667
+msgid "For the best split test results the \"change\" should be above the fold of the page, within the first 560 pixels if possible or at least the first 710 pixels - or the change should repeat throughout the page like a sales call to action button. This is extremely important with lower traffic. For websites with long form copies, more traffic ( 10,000+ daily ) is required properly test such changes and typically more time, but that depends on the total traffic and sales."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:669
+msgid "For SEO driven tests, wait a few days to make sure the change does not fluctuate the listings, if you do get a traffic spike let the page settle for a few days/week( s ) before starting the test."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:676
+msgid "Create 2+ %1$sIncludes%2$s, each of which will contain a unique copy to split test."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:692
+msgid "Set the title to something helpful: \"Promo X - Version 1\" or any format you would like to follow."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:693
+msgid "If needed, modify the post Permalink slug to something short and relevant: promo-x-version-1."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:694
+msgid "Under the Categories Metabox, click + Add New Category and create a custom split test category or a unique category for this test."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:699
+msgid "Remember to group related split tests into the same category."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:704
+msgid "Opt-in Form Management and Rotation"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:706
+msgid "Using Includes to manage opt-in forms is incredibility helpful. Even simply pasting the opt-in HTML into an Include, and then adding the Include to a widget will allow you to use the full editor to manage the design/html, rather than a small widget."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:708
+msgid "However, grouping related opt-in forms into categories will allow you to rotate/update opt-in forms, even split test various form layouts, colors, or promotional messages. Which means means many different opt-in form styles, layouts, etc will need to be created to get the most out of this feature."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:710
+msgid "Most variations are simple enough to make, however at some point all of us start to run dry on ideas so below is a few ideas that you can use to help add a few extra forms to the rotation."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:713
+msgid "Pre-holiday ( week before ) & and holiday ( week of ) design changes."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:714
+msgid "National holiday recognition, ie: national pizza day, bake a cake day, etc."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:715
+msgid "Major upcoming sales/promotions, like Black Friday or spring clearance sales."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:716
+msgid "Opt-in to get access/download, etc lead generators that are not full time promotions."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:719
+msgid "Forms in different locations ( ie footer vs. sidebar ) should be unique from each other; mix up the promotional hook, the look, design/color, make them unique. While forms within the same category or display location ( ie footer left widget ) might only slightly change; everything is the same other than the labels are inside the form inputs rather than above each input."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:722
+msgid "Other Possible Uses"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:725
+msgid "Anytime content is duplicated on posts, pages, other post types, etc. Common duplicate content includes custom Author Cards/Bio's and Real Estate Disclosure Statements."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:727
+msgid "Create an Includes Widget Category and store all Text/Html Widgets as Includes for easier backup & restore ability."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:729
+msgid "Create Includes to store all Text/Html Widgets as Includes for easier backup & restore ability."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:731
+msgid "Centralize Store Policies That Repeat On Various Product / Store Pages."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:732
+msgid "Centralize Store F.A.Q .'s That Repeat On Various Product / Store Pages."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:733
+msgid "Centralize Advertisement Management For Blog Posts And Pages, Reducing The Need JavaScript."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:735
+msgid "Centralized Various Tracking Codes Used For Everything; homepage rotations, promotions, opt-in form performance, etc."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:742
+msgid "Import & Export Settings"
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:747
+msgid "To export plugin settings, click the %1$sImport/Export Tab%2$s to view ( optionally email ) exported data of all currently saved plugin settings. Exported settings are base64 encoded JSON setting key name and the value pairs - and can be shared across installs."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:754
+msgid "To export Includes posts, open the %1$sTools > Export%2$s menu link. Select \"Includes\" then click the blue \"Download Export File\" button."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link.
+#: templates/plugin-admin/documents.php:761
+msgid "To import Includes posts, open the %1$sTools > Import%2$s menu link. Click \"Run Importer\" link under the WordPress section. Exported WordPress files will automatically include and import any found Includes."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:769
+msgid "To import plugin settings, add the base64 encoded string to the Import Settings textarea then click the blue \"import settings\" button."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:778
+msgid "Delete All Settings"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:780
+msgid "No plugin settings/posts, etc will be deleted if the plugin is deactivated/uninstalled - all settings/posts must be manually deleted."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link. %3$s Open link. %4$s Close link.
+#: templates/plugin-admin/documents.php:786
+msgid "To delete all Includes posts: the simplest way is to manually delete the %1$sIncludes%2$s, otherwise download the free plugin %3$sBulk Delete%4$s, activate and access the \"Bulk Delete Posts\" menu link, then scroll down to the \"By Taxonomy\" section. Select the Includes post type then click the Bulk Delete button."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:796
+msgid "To delete all plugin settings: scroll down to the bottom of the Import/Export page and click the \"delete all settings\" button, then click the popup Ok button to confirm your selection."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:798
+msgid "To delete all plugin settings: scroll down to the bottom of the settings page and click the \"delete all settings\" button, then click the popup Ok button to confirm your selection."
+msgstr ""
+
+#: templates/plugin-admin/footer.php:38, templates/plugin-admin/header.php:24, templates/plugin-admin/sidebar.php:36
+msgid "Includes for WordPress"
+msgstr ""
+
+#: templates/plugin-admin/footer.php:39
+msgid "top"
+msgstr ""
+
+#: templates/plugin-admin/header.php:24
+msgid "Include Content Anywhere!"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:29
+msgid "No Settings To Export"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:47
+msgid "Import/Export/Delete Settings"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:49
+msgid "Manage plugin Import & Export data, or view/delete all plugin settings."
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:53
+msgid "Exported Settings"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:54, templates/plugin-admin/importexport.php:89
+msgid "Exported data for Includes plugin settings only."
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:63
+msgid "Email Export To:"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:64
+msgid "Enter a valid email address to send the exported settings to."
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:79
+msgid "send email"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:88
+msgid "Import Settings"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:106
+msgid "import settings"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:112
+msgid "Saved Settings"
+msgstr ""
+
+#: templates/plugin-admin/importexport.php:113
+msgid "A view of all settings saved by the plugin."
+msgstr ""
+
+#: templates/plugin-admin/notice.php:32
+msgid "Never miss an important update! Opt-in to our security and feature update notifications, and non-sensitive diagnostic tracking with freemius."
+msgstr ""
+
+#: templates/plugin-admin/notice.php:34
+msgid "Opt-In"
+msgstr ""
+
+#: templates/plugin-admin/notice.php:35
+msgid "Learn More"
+msgstr ""
+
+#: templates/plugin-admin/notice.php:36
+msgid "Dismiss"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:40
+msgid "Enable and Disable Plugin Features."
+msgstr ""
+
+#: templates/plugin-admin/settings.php:57
+msgid "Display Shortcodes on Category Term Pages"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:58, templates/plugin-admin/settings.php:62, templates/plugin-admin/settings.php:75, templates/plugin-admin/settings.php:80, templates/plugin-admin/settings.php:84, templates/plugin-admin/settings.php:88
+msgid "Enable"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:58, templates/plugin-admin/settings.php:62, templates/plugin-admin/settings.php:75, templates/plugin-admin/settings.php:80, templates/plugin-admin/settings.php:84, templates/plugin-admin/settings.php:88
+msgid "Disable"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:58
+msgid "Adds shortcode input boxes to category terms assigned to the includes post type. To view: Includes > Categories > Edit - to view the shortcode( s )."
+msgstr ""
+
+#: templates/plugin-admin/settings.php:61
+msgid "Enable [code] Shortcode"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:62
+msgid " Enables custom shortcode [code] and adds \"code/script\" editor box below main Includes editor. Supports PHP, Bash, jQuery, JavaScript, etc. WARNING: The code you enter into \"code\" editor is raw unfiltered data for both input and output!!!"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:74
+msgid "Allow Posts & Pages to use [includes] Shortcode"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:75
+msgid "Use the slug from any published post/page to automatically include the content."
+msgstr ""
+
+#: templates/plugin-admin/settings.php:79
+msgid "Shortcodes in Post/Page Titles"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:80
+msgid "Any shortcode can be used in post/page titles once enabled."
+msgstr ""
+
+#: templates/plugin-admin/settings.php:83
+msgid "Shortcodes in Menus"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:84, templates/plugin-admin/settings.php:88
+msgid "Any shortcode can be used in menus once enabled."
+msgstr ""
+
+#: templates/plugin-admin/settings.php:87
+msgid "Shortcodes in Widget Titles"
+msgstr ""
+
+#: templates/plugin-admin/settings.php:91
+msgid "Note: By default WordPress automatically parses shortcodes within text widgets."
+msgstr ""
+
+#: templates/plugin-admin/settings.php:96
+msgid "update settings"
+msgstr ""
+
+#: templates/plugin-admin/sidebar.php:48
+msgid "Connect To Plugin Services"
+msgstr ""
+
+#: templates/plugin-admin/sidebar.php:53
+msgid "Upgrade For Awesome Features!"
+msgstr ""
+
+#: templates/plugin-admin/sidebar.php:55
+msgid "Contact Support"
+msgstr ""
+
+#: templates/plugin-admin/sidebar.php:56
+msgid "Plugin Home Page"
+msgstr ""
+
+#: templates/plugin-admin/sidebar.php:57
+msgid "Bugs & Feature Requests"
+msgstr ""
