@@ -9,8 +9,8 @@ var gulp            = require('gulp');
 var inquirer        = require('inquirer');
 var notify          = require('gulp-notify');
 var replace         = require('gulp-replace');
-//var moment          = require('moment');
-//var current_moment  = moment().format('YYYY-DD-MM');
+var moment          = require('moment');
+var current_moment  = moment().format('YYYY-MM-DD');
 var current_version = require('../../package.json').version;
 var next_version;
 
@@ -18,8 +18,7 @@ var next_version;
 /**
  * Bump Version Prompt & Version Update
  */
-gulp.task('bump', gulp.series('prompt', 'plugin', 'packagejson', 'readmetxt', 'updatesjson'));
-
+gulp.task('bump', gulp.series('prompt', 'plugin', 'packagejson', 'packagelockjson', 'updatesjson', 'readmetxt', 'readmemd'));
 
 /**
  * Inject Version Prompt
@@ -62,15 +61,13 @@ gulp.task('packagejson', function() {
 
 /**
  * Update Version Number For Sourced Files
-gulp.task('readmemd', function() {
-    return gulp.src('./README.md', {base: process.cwd()})
-    //.pipe(replace(/Released: \d+/g, "Released: " + moment))
-    //.pipe(replace("= " + current_version + " =", "= " + next_version + " ="))
-    //.pipe(replace("md#" + current_version, "md#" + next_version))
-    .pipe(notify({message: 'README.md updated to: ' + next_version, onLast: true}))
+ */
+gulp.task('packagelockjson', function() {
+    return gulp.src('./package-lock.json', {base: process.cwd()})
+    .pipe(replace("\"version\": \"" + current_version + "\"", "\"version\": \"" + next_version + "\""))
+    .pipe(notify({message: 'package-lock.json updated to: ' + next_version, onLast: true}))
     .pipe(gulp.dest('.'));
 });
- */
 
 
 /**
@@ -91,5 +88,18 @@ gulp.task('updatesjson', function() {
     return gulp.src('./updates.json', {base: process.cwd()})
     .pipe(replace(current_version, next_version))
     .pipe(notify({message: 'updates.json updated to: ' + next_version, onLast: true}))
+    .pipe(gulp.dest('.'));
+});
+
+
+/**
+ * Update Version Number For Sourced Files
+ */
+gulp.task('readmemd', function() {
+    return gulp.src('./README.md', {base: process.cwd()})
+    .pipe(replace(/md#(.{3})/g, 'md#' + next_version))
+    .pipe(replace(/Released: (.{10})/g, "Released: " + current_moment))
+    .pipe(replace("= " + current_version + " =", "= " + next_version + " ="))
+    .pipe(notify({message: 'README.md updated to: ' + next_version + ' --> Manual Update Also Required!', onLast: true}))
     .pipe(gulp.dest('.'));
 });

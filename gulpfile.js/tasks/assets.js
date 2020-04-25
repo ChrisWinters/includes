@@ -7,7 +7,6 @@ var gulp    = require('gulp');
 var del     = require('del');
 var notify  = require('gulp-notify');
 var concat  = require('gulp-concat');
-var replace = require('gulp-replace');
 
 
 /**
