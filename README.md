@@ -15,7 +15,7 @@ Includes is a premium first WordPress plugin, with a built-in free version that 
 
 3rd party premium license management is provided by [Freemius](https://freemius.com/) - All users will be asked to enter a premium license key upon activation; press the skip button to activate the free version.
 
-[Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker)(PUC) is a built-in 3rd party extension that allows the plugin to update like any other WordPress plugin.
+[Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker)(PUC) is a built-in 3rd party extension that allows Github hosted plugins to update like any other WordPress plugin.
 
 
 ## Free-Premium Plugin
