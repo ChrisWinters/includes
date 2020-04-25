@@ -7,9 +7,9 @@ Includes is a unique custom post type that can be accessed with a shortcode. Pub
 
 ## Open Source Premium + Free Plugin
 
-**Master Branch:** Full current release
-**Develop Branch:** Work in progress, else matches master
-**Recent Release:** [Release Versions](https://github.com/ChrisWinters/includes/releases) 
+* **Master Branch:** Full current release
+* **Develop Branch:** Work in progress, else matches master
+* **Recent Release:** [Release Versions](https://github.com/ChrisWinters/includes/releases) 
 
 Includes is a premium first WordPress plugin, with a built-in free version that never expires, and does not require a license or opt-in to use.
 
