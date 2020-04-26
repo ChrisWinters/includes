@@ -1,5 +1,9 @@
 # Changelog
 
+# 4.0.1
+**2020-04-26 - Hotfix**
+* Corrected SDK path in includes-fs
+
 # 4.0.0
 **2020-04-23 - Feature**
 * Updated sidebar.php links to be current

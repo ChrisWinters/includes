@@ -9,7 +9,7 @@
  * @link       /LICENSE
  */
 
-if ( false === file_exists( dirname( INCLUDES_FILE ) . '/sdk/freemius/start.php' ) ) {
+if ( false === file_exists( dirname( INCLUDES_FILE ) . '/inc/sdk/freemius/start.php' ) ) {
 	return;
 }
 
@@ -23,7 +23,7 @@ if ( true === function_exists( 'includes_fs' ) ) {
 		global $includes_fs;
 
 		if ( false === isset( $includes_fs ) ) {
-			require_once dirname( INCLUDES_FILE ) . '/sdk/freemius/start.php';
+			require_once dirname( INCLUDES_FILE ) . '/inc/sdk/freemius/start.php';
 
 			$includes_fs = fs_dynamic_init(
 				array(
@@ -33,19 +33,18 @@ if ( true === function_exists( 'includes_fs' ) ) {
 					'type'                => 'plugin',
 					'public_key'          => 'pk_bf608cedaf195d8ff5591b59e24dc',
 					'is_premium'          => true,
-					'has_premium_version' => true,
+					'has_premium_version' => false,
 					'has_addons'          => false,
 					'has_paid_plans'      => true,
 					'is_live'             => true,
-					'has_affiliation'     => 'selected',
 					'menu'                => array(
 						'account'     => true,
 						'contact'     => false,
 						'support'     => false,
 						'affiliation' => false,
 						'pricing'     => false,
-						'slug'       => 'edit.php?post_type=includes',
-						'first-path' => 'edit.php?post_type=includes&page=includes&tab=settings',
+						'slug'        => 'edit.php?post_type=includes',
+						'first-path'  => 'edit.php?post_type=includes&page=includes&tab=settings',
 					),
 				)
 			);
