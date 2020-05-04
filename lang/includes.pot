@@ -247,6 +247,18 @@ msgstr ""
 msgid "Example Uses"
 msgstr ""
 
+#: templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:806
+msgid "Post Type Template"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:828
+msgid "Action Hooks"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:866
+msgid "Body Class"
+msgstr ""
+
 #: templates/plugin-admin/documents.php:39
 msgid "Code Shortcode"
 msgstr ""
@@ -792,6 +804,49 @@ msgstr ""
 
 #: templates/plugin-admin/documents.php:796
 msgid "To delete all plugin settings: scroll down to the bottom of the Import/Export page and click the \"delete all settings\" button, then click the popup Ok button to confirm your selection."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:808
+msgid "The custom post type template is viewable only to logged in administrators. The purpose of the template is to show off an internal example of saved Includes to ensure the Include works as expected."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link. %3$s Open link. %4$s Close link.
+#: templates/plugin-admin/documents.php:813
+msgid "Advanced users can override the default template %1$sposttype-includes.php%2$s by following the WordPress %3$stemplate hierarchy%4$s for themes."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:823
+msgid "Overriding the default template should only be done by advanced users that understand exactly what to do with the limited information above. No support is provided for this feature past coded functionality within the plugin. Override at your own risk."
+msgstr ""
+
+#. translators: %1$s Open link. %2$s Close link. %3$s Open link. %4$s Close link.
+#: templates/plugin-admin/documents.php:833
+msgid "The %1$sposttype-includes.php%2$s template has two custom action hooks that can be used to hook your own custom functions to."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:842
+msgid "Before all content (directly after the opened body tag)"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:843
+msgid "After all content (directly before the closed body tag)"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:849
+msgid "Example function"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:849
+msgid "Modify as needed and add to your themes function.php file."
+msgstr ""
+
+#. translators: %1$s Open bold/code tag. %2$s Close bold/code tag. %3$s Open link. %4$s Close link.
+#: templates/plugin-admin/documents.php:871
+msgid "Use the css class %1$sincludes-template-default%2$s in your themes custom css file to add styling to the the %3$sposttype-includes.php%4$s template."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:885
+msgid "The space above is blank on purpose."
 msgstr ""
 
 #: templates/plugin-admin/footer.php:38, templates/plugin-admin/header.php:24, templates/plugin-admin/sidebar.php:36
