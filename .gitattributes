@@ -7,3 +7,4 @@ assets/css/bootstrap4 export-ignore
 assets/psds export-ignore
 assets/images/screenshots export-ignore
 gulpfile.js export-ignore
+copy.sh export-ignore

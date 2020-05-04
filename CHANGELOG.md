@@ -1,5 +1,11 @@
 # Changelog
 
+# 4.1.0
+**2020-05-03 - Feature**
+* Added action hooks includes_before_posttype_content and includes_after_posttype_content within posttype-includes.php template
+* Updated Plugin Update Checker to most recent release
+* Updated documentation
+
 # 4.0.1
 **2020-04-26 - Hotfix**
 * Corrected SDK path in includes-fs
@@ -33,7 +39,7 @@
 # 3.0.0
 **2018-07-01 - Release**
 
-* Offical Release
+* Official Release
 
 # 2.1.0
 **2018-01-24 - Feature**
@@ -53,7 +59,7 @@
 # 1.2.1
 **2016-12-01 - Hotfix**
 
-* Corrected posttype template view for code include
+* Corrected post type template view for code include
 
 # 1.2.0
 **2016-11-09 - Feature**
@@ -64,7 +70,7 @@
 **2016-05-20 - Feature**
 
 * Added allow Posts & Pages to use [include] Shortcode
-* Corrected posttype template view for code include
+* Corrected post type template view for code include
 
 # 1.0.0
 **2016-02-14 - Release**
@@ -84,7 +90,7 @@
 # 0.1.0
 **2015-01-06 - Feature**
 
-* Added custom column to Includes posttype to display shortcode
+* Added custom column to Includes post type to display shortcode
 
 # 0.0.1
 **2014-12-19 - Release**

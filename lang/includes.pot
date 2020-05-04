@@ -84,24 +84,24 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: inc/classes/class-posttype-columns.php:80, inc/classes/class-posttype-columns.php:88
+#: inc/classes/class-posttype-columns.php:88, inc/classes/class-posttype-columns.php:80
 msgid "Include Name"
 msgstr ""
 
-#: inc/classes/class-posttype-columns.php:81, inc/classes/class-posttype-columns.php:89
+#: inc/classes/class-posttype-columns.php:89, inc/classes/class-posttype-columns.php:81
 msgid "Shortcode"
+msgstr ""
+
+#: inc/classes/class-posttype-columns.php:90, inc/classes/class-posttype-columns.php:83
+msgid "Created By"
+msgstr ""
+
+#: inc/classes/class-posttype-columns.php:91, inc/classes/class-posttype-columns.php:84
+msgid "Published"
 msgstr ""
 
 #: inc/classes/class-posttype-columns.php:82, inc/classes/class-taxonomy.php:101
 msgid "Categories"
-msgstr ""
-
-#: inc/classes/class-posttype-columns.php:83, inc/classes/class-posttype-columns.php:90
-msgid "Created By"
-msgstr ""
-
-#: inc/classes/class-posttype-columns.php:84, inc/classes/class-posttype-columns.php:91
-msgid "Published"
 msgstr ""
 
 #: inc/classes/class-posttype.php:397
@@ -231,24 +231,24 @@ msgstr ""
 msgid "Table of Contents"
 msgstr ""
 
-#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41
+#: templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:39
 msgid "Basics"
 msgstr ""
 
-#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:307, templates/plugin-admin/settings.php:38
+#: templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:307, templates/plugin-admin/settings.php:38
 msgid "Plugin Settings"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:447
+msgid "Includes within Includes"
+msgstr ""
+
+#: templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:39
+msgid "Example Uses"
 msgstr ""
 
 #: templates/plugin-admin/documents.php:39
 msgid "Code Shortcode"
-msgstr ""
-
-#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41, templates/plugin-admin/documents.php:447
-msgid "Includes within Includes"
-msgstr ""
-
-#: templates/plugin-admin/documents.php:39, templates/plugin-admin/documents.php:41
-msgid "Example Uses"
 msgstr ""
 
 #: templates/plugin-admin/documents.php:47
@@ -726,12 +726,12 @@ msgstr ""
 msgid "Anytime content is duplicated on posts, pages, other post types, etc. Common duplicate content includes custom Author Cards/Bio's and Real Estate Disclosure Statements."
 msgstr ""
 
-#: templates/plugin-admin/documents.php:727
-msgid "Create an Includes Widget Category and store all Text/Html Widgets as Includes for easier backup & restore ability."
-msgstr ""
-
 #: templates/plugin-admin/documents.php:729
 msgid "Create Includes to store all Text/Html Widgets as Includes for easier backup & restore ability."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:727
+msgid "Create an Includes Widget Category and store all Text/Html Widgets as Includes for easier backup & restore ability."
 msgstr ""
 
 #: templates/plugin-admin/documents.php:731
@@ -786,12 +786,12 @@ msgstr ""
 msgid "To delete all Includes posts: the simplest way is to manually delete the %1$sIncludes%2$s, otherwise download the free plugin %3$sBulk Delete%4$s, activate and access the \"Bulk Delete Posts\" menu link, then scroll down to the \"By Taxonomy\" section. Select the Includes post type then click the Bulk Delete button."
 msgstr ""
 
-#: templates/plugin-admin/documents.php:796
-msgid "To delete all plugin settings: scroll down to the bottom of the Import/Export page and click the \"delete all settings\" button, then click the popup Ok button to confirm your selection."
-msgstr ""
-
 #: templates/plugin-admin/documents.php:798
 msgid "To delete all plugin settings: scroll down to the bottom of the settings page and click the \"delete all settings\" button, then click the popup Ok button to confirm your selection."
+msgstr ""
+
+#: templates/plugin-admin/documents.php:796
+msgid "To delete all plugin settings: scroll down to the bottom of the Import/Export page and click the \"delete all settings\" button, then click the popup Ok button to confirm your selection."
 msgstr ""
 
 #: templates/plugin-admin/footer.php:38, templates/plugin-admin/header.php:24, templates/plugin-admin/sidebar.php:36

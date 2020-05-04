@@ -2,8 +2,6 @@
  * Bump Version Number Update
  *
  * @command gulp bump
- * @command gulp prompt
- * @command gulp version
  */
 var gulp            = require('gulp');
 var inquirer        = require('inquirer');

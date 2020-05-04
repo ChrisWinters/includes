@@ -21,13 +21,28 @@ mark, .mark { padding: 0.2em; background-color: #fcf8e3; }
 .blockquote { margin-bottom: 1rem; font-size: 1.25rem; }
 .blockquote-footer { display: block; font-size: 80%; color: #6c757d; }
 .blockquote-footer::before { content: "\2014\00A0"; }
-code { font-size: 87.5%; color: #e83e8c; word-break: break-word; }
+code { font-size: 87.5%; color: #e83e8c; word-wrap: break-word; }
 a > code { color: inherit; }
 kbd { padding: 0.2rem 0.4rem; font-size: 87.5%; color: #fff; background-color: #212529; border-radius: 0.2rem; }
 kbd kbd { padding: 0; font-size: 100%; font-weight: 700; }
 pre { display: block; font-size: 87.5%; color: #212529; }
 pre code { font-size: inherit; color: inherit; word-break: normal; }
 .pre-scrollable { max-height: 340px; overflow-y: scroll; }
+.float-left { float: left !important; }
+.float-right { float: right !important; }
+.float-none { float: none !important; }
+@media (min-width: 576px) { .float-sm-left { float: left !important; }
+  .float-sm-right { float: right !important; }
+  .float-sm-none { float: none !important; } }
+@media (min-width: 768px) { .float-md-left { float: left !important; }
+  .float-md-right { float: right !important; }
+  .float-md-none { float: none !important; } }
+@media (min-width: 992px) { .float-lg-left { float: left !important; }
+  .float-lg-right { float: right !important; }
+  .float-lg-none { float: none !important; } }
+@media (min-width: 1200px) { .float-xl-left { float: left !important; }
+  .float-xl-right { float: right !important; }
+  .float-xl-none { float: none !important; } }
 .m-0 { margin: 0 !important; }
 .mt-0, .my-0 { margin-top: 0 !important; }
 .mr-0, .mx-0 { margin-right: 0 !important; }

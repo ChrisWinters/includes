@@ -107,6 +107,8 @@ if ( true === post_type_exists( $includes_posttype_key ) ) {
 	</head>
 	<body <?php body_class(); ?>>
 		<?php
+			do_action( 'includes_before_posttype_content' );
+
 		if ( includes_fs()->can_use_premium_code() ) {
 			if ( filter_input( INPUT_GET, 'type' ) === 'code' ) {
 				/*
@@ -166,6 +168,8 @@ if ( true === post_type_exists( $includes_posttype_key ) ) {
 			 */
 			echo wp_kses_post( $content );
 		}
+
+		do_action( 'includes_after_posttype_content' );
 
 		/*
 		 * Fire the wp_footer action.

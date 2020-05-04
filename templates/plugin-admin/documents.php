@@ -36,9 +36,9 @@ if ( false === defined( 'ABSPATH' ) ) {
 <h3 class="text-center"><?php esc_html_e( 'Table of Contents', 'includes' ); ?></h3>
 
 <?php if ( ( includes_fs()->can_use_premium_code() ) ) { ?>
-	<p class="text-center">[<a href="#basics"><?php esc_html_e( 'Basics', 'includes' ); ?></a>] [<a href="#atts"><?php esc_html_e( 'Shortcode Attributes', 'includes' ); ?></a>] [<a href="#settings"><?php esc_html_e( 'Plugin Settings', 'includes' ); ?></a>] [<a href="#code"><?php esc_html_e( 'Code Shortcode', 'includes' ); ?></a>] [<a href="#includes"><?php esc_html_e( 'Includes within Includes', 'includes' ); ?></a>] [<a href="#examples"><?php esc_html_e( 'Example Uses', 'includes' ); ?></a>] [<a href="#importexport"><?php esc_html_e( 'Import/Export', 'includes' ); ?></a>]</p>
+	<p class="text-center">[<a href="#basics"><?php esc_html_e( 'Basics', 'includes' ); ?></a>] [<a href="#atts"><?php esc_html_e( 'Shortcode Attributes', 'includes' ); ?></a>] [<a href="#settings"><?php esc_html_e( 'Plugin Settings', 'includes' ); ?></a>] [<a href="#code"><?php esc_html_e( 'Code Shortcode', 'includes' ); ?></a>] [<a href="#includes"><?php esc_html_e( 'Includes within Includes', 'includes' ); ?></a>] [<a href="#examples"><?php esc_html_e( 'Example Uses', 'includes' ); ?></a>] [<a href="#importexport"><?php esc_html_e( 'Import/Export', 'includes' ); ?></a>] [<a href="#template"><?php esc_html_e( 'Post Type Template', 'includes' ); ?></a>] [<a href="#hooks"><?php esc_html_e( 'Action Hooks', 'includes' ); ?></a>] [<a href="#bodyclass"><?php esc_html_e( 'Body Class', 'includes' ); ?></a>]</p>
 <?php } else { ?>
-	<p class="text-center">[<a href="#basics"><?php esc_html_e( 'Basics', 'includes' ); ?></a>] [<a href="#settings"><?php esc_html_e( 'Plugin Settings', 'includes' ); ?></a>] [<a href="#includes"><?php esc_html_e( 'Includes within Includes', 'includes' ); ?></a>] [<a href="#examples"><?php esc_html_e( 'Example Uses', 'includes' ); ?></a>]</p>
+	<p class="text-center">[<a href="#basics"><?php esc_html_e( 'Basics', 'includes' ); ?></a>] [<a href="#settings"><?php esc_html_e( 'Plugin Settings', 'includes' ); ?></a>] [<a href="#includes"><?php esc_html_e( 'Includes within Includes', 'includes' ); ?></a>] [<a href="#examples"><?php esc_html_e( 'Example Uses', 'includes' ); ?></a>] [<a href="#template"><?php esc_html_e( 'Post Type Template', 'includes' ); ?></a>] [<a href="#hooks"><?php esc_html_e( 'Action Hooks', 'includes' ); ?></a>] [<a href="#bodyclass"><?php esc_html_e( 'Body Class', 'includes' ); ?></a>]</p>
 <?php } ?>
 
 
@@ -799,3 +799,87 @@ if ( ! includes_fs()->is_premium() ) {
 <?php } ?>
 	<li><?php echo wp_kses_post( $includes_docs_to_delete ); ?></li>
 </ol>
+
+
+<hr class="my-4 w-75" id="template" />
+
+<h3 class="text-secondary font-weight-bold h3"><?php esc_html_e( 'Post Type Template', 'includes' ); ?><a href="#top"><span class="dashicons-before dashicons-arrow-up"></span></a></h3>
+
+<p><?php esc_html_e( 'The custom post type template is viewable only to logged in administrators. The purpose of the template is to show off an internal example of saved Includes to ensure the Include works as expected.', 'includes' ); ?></p>
+
+	<?php
+	$includes_template_hierarchy = sprintf(
+		/* Translators: %1$s Open link. %2$s Close link. %3$s Open link. %4$s Close link. */
+		esc_html__( 'Advanced users can override the default template %1$sposttype-includes.php%2$s by following the WordPress %3$stemplate hierarchy%4$s for themes.', 'includes' ),
+		'<a href="' . esc_url( admin_url( 'https://github.com/ChrisWinters/includes/blob/master/templates/posttype-includes.php' ) ) . '" target="_blank">',
+		'</a>',
+		'<a href="' . esc_url( admin_url( 'https://wphierarchy.com/' ) ) . '" target="_blank">',
+		'</a>'
+	);
+	?>
+
+<p><?php echo wp_kses_post( $includes_template_hierarchy ); ?></p>
+
+<p>** <em><?php esc_html_e( 'Overriding the default template should only be done by advanced users that understand exactly what to do with the limited information above. No support is provided for this feature past coded functionality within the plugin. Override at your own risk.', 'includes' ); ?></em></p>
+
+
+<hr class="my-4 w-75" id="hooks" />
+
+<h3 class="text-secondary font-weight-bold h3"><?php esc_html_e( 'Action Hooks', 'includes' ); ?><a href="#top"><span class="dashicons-before dashicons-arrow-up"></span></a></h3>
+
+	<?php
+	$includes_action_hooks_template = sprintf(
+		/* Translators: %1$s Open link. %2$s Close link. %3$s Open link. %4$s Close link. */
+		esc_html__( 'The %1$sposttype-includes.php%2$s template has two custom action hooks that can be used to hook your own custom functions to.', 'includes' ),
+		'<a href="' . esc_url( admin_url( 'https://github.com/ChrisWinters/includes/blob/master/templates/posttype-includes.php' ) ) . '" target="_blank">',
+		'</a>'
+	);
+	?>
+
+<p><?php echo wp_kses_post( $includes_action_hooks_template ); ?></p>
+
+<ul>
+	<li><b>includes_before_posttype_content</b> <?php esc_html_e( 'Before all content (directly after the opened body tag)', 'includes' ); ?></li>
+	<li><b>includes_after_posttype_content</b> <?php esc_html_e( 'After all content (directly before the closed body tag)', 'includes' ); ?></li>
+</ul>
+
+<p><b><code><?php echo esc_html( 'add_action( \'includes_before_posttype_content\', \'your_first_function_name\' );' ); ?></code></b><br />
+<b><code><?php echo esc_html( 'add_action( \'includes_after_posttype_content\', \'your_second_function_name\' );' ); ?></code></b></p>
+
+<p><b><?php esc_html_e( 'Example function', 'includes' ); ?>:</b> <?php esc_html_e( 'Modify as needed and add to your themes function.php file.', 'includes' ); ?></p>
+
+<p><b><code><?php echo esc_html( 'function prefix_before_content() {' ); ?></code></b><br />
+<b><code class="pl-4"><?php echo esc_html( 'if ( false === is_admin() || \'includes\' !== filter_input( INPUT_GET, \'post_type\' ) ) { return; }' ); ?></code></b><br />
+<b><code class="pl-4"><?php echo esc_html( 'echo wp_kses_post( \'<div class="container">\' );' ); ?></code></b><br />
+<b><code><?php echo esc_html( '}' ); ?></code></b><br />
+<b><code><?php echo esc_html( 'add_action( \'includes_before_posttype_content\', \'prefix_before_content\' );' ); ?></code></b></p>
+
+<p><b><code><?php echo esc_html( 'function prefix_after_content() {' ); ?></code></b><br />
+<b><code class="pl-4"><?php echo esc_html( 'if ( false === is_admin() || \'includes\' !== filter_input( INPUT_GET, \'post_type\' ) ) { return; }' ); ?></code></b><br />
+<b><code class="pl-4"><?php echo esc_html( 'echo wp_kses_post( \'</div><!-- .container -->\' );' ); ?></code></b><br />
+<b><code><?php echo esc_html( '}' ); ?></code></b><br />
+<b><code><?php echo esc_html( 'add_action( \'includes_after_posttype_content\', \'prefix_after_content\' );' ); ?></code></b></p>
+
+
+<hr class="my-4 w-75" id="bodyclass" />
+
+<h3 class="text-secondary font-weight-bold h3"><?php esc_html_e( 'Body Class', 'includes' ); ?><a href="#top"><span class="dashicons-before dashicons-arrow-up"></span></a></h3>
+
+	<?php
+	$includes_body_classes = sprintf(
+		/* Translators: %1$s Open bold/code tag. %2$s Close bold/code tag. %3$s Open link. %4$s Close link. */
+		esc_html__( 'Use the css class %1$sincludes-template-default%2$s in your themes custom css file to add styling to the the %3$sposttype-includes.php%4$s template.', 'includes' ),
+		'<b><code>',
+		'</code></b>',
+		'<a href="' . esc_url( admin_url( 'https://github.com/ChrisWinters/includes/blob/master/templates/posttype-includes.php' ) ) . '" target="_blank">',
+		'</a>'
+	);
+	?>
+
+<p><?php echo wp_kses_post( $includes_body_classes ); ?></p>
+
+<hr class="my-4 w-75" />
+<p><br /><p><p><br /><p><p><br /><p><p><br /><p><p><br /><p>
+<p><br /><p><p><br /><p><p><br /><p><p><br /><p><p><br /><p>
+<p><br /><p><p><br /><p><p><br /><p><p><br /><p><p><br /><p>
+<em><small><?php esc_html_e( 'The space above is blank on purpose.', 'includes' ); ?></small></em>

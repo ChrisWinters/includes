@@ -2,4 +2,4 @@
 node_modules
 assets/css/bootstrap4
 about.html
-copy.sh
+copy-config.sh

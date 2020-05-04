@@ -23,7 +23,11 @@ gulp.task('clean-assets', function(){
 gulp.task('assets', function(done) {
     var stream
 
+    gulp.src('./node_modules/bootstrap/scss/*.scss').pipe(gulp.dest('./assets/css/bootstrap4'))
     gulp.src('./node_modules/bootstrap/scss/**/*.scss').pipe(gulp.dest('./assets/css/bootstrap4'))
+    gulp.src('./node_modules/bootstrap/scss/mixins/*.scss').pipe(gulp.dest('./assets/css/bootstrap4'))
+    gulp.src('./node_modules/bootstrap/scss/utilities/*.scss').pipe(gulp.dest('./assets/css/bootstrap4'))
+    gulp.src('./node_modules/bootstrap/scss/vendor/*.scss').pipe(gulp.dest('./assets/css/bootstrap4'))
     .pipe(notify({message: 'Assets Moved', onLast: true}))
 
     done();

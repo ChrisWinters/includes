@@ -75,9 +75,9 @@ All plugin documentation can be accessed directly within the Plugin Admin area (
 
 ## Changelog
 
-= 4.0.1 =
-* Released: 2020-04-26
-* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#401
+= 4.1.0 =
+* Released: 2020-05-02
+* Changelog: https://github.com/ChrisWinters/includes/blob/master/CHANGELOG.md#4.1.0.1.0.0
 
 
 ## License
