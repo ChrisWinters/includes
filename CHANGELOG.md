@@ -1,5 +1,9 @@
 # Changelog
 
+# 4.1.1
+**2020-05-06 - Hotfix**
+* Removed extra body class filter as post type template already injects unique class
+
 # 4.1.0
 **2020-05-03 - Feature**
 * Added action hooks includes_before_posttype_content and includes_after_posttype_content within posttype-includes.php template
