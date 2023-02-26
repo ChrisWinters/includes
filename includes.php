@@ -56,6 +56,12 @@ require_once __DIR__.'/inc/functions/option/get.php';
 require_once __DIR__.'/inc/functions/option/setting.php';
 require_once __DIR__.'/inc/functions/option/update.php';
 
+require_once __DIR__.'/inc/functions/filter/menuItems.php';
+require_once __DIR__.'/inc/functions/filter/postTitles.php';
+require_once __DIR__.'/inc/functions/filter/template.php';
+require_once __DIR__.'/inc/functions/filter/widgetText.php';
+require_once __DIR__.'/inc/functions/filter/widgetTitles.php';
+
 require_once __DIR__.'/inc/functions/plugin-admin/adminNotices.php';
 require_once __DIR__.'/inc/functions/plugin-admin/postObject.php';
 require_once __DIR__.'/inc/functions/plugin-admin/postRedirect.php';
@@ -141,4 +147,13 @@ function plugin(): void
         'includes',
         '\Includes\shortcode'
     );
+
+    // Inject viewer into template include path.
+    \Includes\Filter\template();
+
+    // Allow includes shortcode in featured areas.
+    \Includes\Filter\menuItems();
+    \Includes\Filter\postTitles();
+    \Includes\Filter\widgetText();
+    \Includes\Filter\widgetTitles();
 }
