@@ -68,6 +68,11 @@ require_once __DIR__.'/inc/functions/plugin-admin/postRedirect.php';
 require_once __DIR__.'/inc/functions/plugin-admin/queryString.php';
 require_once __DIR__.'/inc/functions/plugin-admin/securityCheck.php';
 
+require_once __DIR__.'/inc/functions/plugin-admin/metabox/add.php';
+require_once __DIR__.'/inc/functions/plugin-admin/metabox/editor.php';
+require_once __DIR__.'/inc/functions/plugin-admin/metabox/save.php';
+require_once __DIR__.'/inc/functions/plugin-admin/metabox/shortcode.php';
+
 require_once __DIR__.'/inc/functions/plugin-admin/posts/actions.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/delete.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/update.php';
@@ -122,6 +127,18 @@ function backend(): void
     \add_action(
         'admin_post_update',
         '\Includes\PluginAdmin\Posts\actions'
+    );
+
+    // Add MetaBoxes.
+    \add_action(
+        'add_meta_boxes',
+        'Includes\PluginAdmin\MetaBox\add'
+    );
+
+    // Save code MetaBox data.
+    \add_action(
+        'save_post_includes',
+        '\Includes\PluginAdmin\MetaBox\save',
     );
 
     // Plugin admin area notices.
