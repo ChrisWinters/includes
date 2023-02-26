@@ -73,6 +73,11 @@ require_once __DIR__.'/inc/functions/plugin-admin/metabox/editor.php';
 require_once __DIR__.'/inc/functions/plugin-admin/metabox/save.php';
 require_once __DIR__.'/inc/functions/plugin-admin/metabox/shortcode.php';
 
+require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnCategory.php';
+require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnContent.php';
+require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnShortcode.php';
+require_once __DIR__.'/inc/functions/plugin-admin/posttype/modifyColumns.php';
+
 require_once __DIR__.'/inc/functions/plugin-admin/posts/actions.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/delete.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/update.php';
@@ -139,6 +144,22 @@ function backend(): void
     \add_action(
         'save_post_includes',
         '\Includes\PluginAdmin\MetaBox\save',
+    );
+
+    // Modify post type columns.
+    \add_filter(
+        'manage_includes_posts_columns',
+        '\Includes\PluginAdmin\PostType\modifyColumns',
+        10,
+        1
+    );
+
+    // Inject custom post type column content.
+    \add_action(
+        'manage_includes_posts_custom_column',
+        '\Includes\PluginAdmin\PostType\columnContent',
+        10,
+        2
     );
 
     // Plugin admin area notices.
