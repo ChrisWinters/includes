@@ -47,6 +47,10 @@ function settings(string $key): string|array
     return $settings[$key];
 }
 
+require_once __DIR__.'/inc/functions/taxonomy.php';
+require_once __DIR__.'/inc/functions/postType.php';
+require_once __DIR__.'/inc/functions/shortcode.php';
+
 require_once __DIR__.'/inc/functions/option/delete.php';
 require_once __DIR__.'/inc/functions/option/get.php';
 require_once __DIR__.'/inc/functions/option/setting.php';
@@ -62,6 +66,13 @@ require_once __DIR__.'/inc/functions/plugin-admin/posts/actions.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/delete.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/update.php';
 
+require_once __DIR__.'/inc/functions/query/wp.php';
+require_once __DIR__.'/inc/functions/query/args/category.php';
+require_once __DIR__.'/inc/functions/query/args/order.php';
+require_once __DIR__.'/inc/functions/query/args/orderby.php';
+require_once __DIR__.'/inc/functions/query/args/postsPerPage.php';
+require_once __DIR__.'/inc/functions/query/args/single.php';
+
 require_once __DIR__.'/inc/functions/plugin-admin/view/displayAdmin.php';
 require_once __DIR__.'/inc/functions/plugin-admin/view/enqueueScripts.php';
 require_once __DIR__.'/inc/functions/plugin-admin/view/includeTemplates.php';
@@ -72,6 +83,12 @@ require_once __DIR__.'/inc/functions/registerPlugin.php';
 \add_action(
     'plugins_loaded',
     '\Includes\backend'
+);
+
+// Init global plugin features.
+\add_action(
+    'init',
+    '\Includes\plugin'
 );
 
 /**
@@ -105,5 +122,23 @@ function backend(): void
     \add_action(
         'admin_notices',
         '\Includes\PluginAdmin\adminNotices'
+    );
+}
+
+/**
+ * Load global plugin features.
+ */
+function plugin(): void
+{
+    // Register includes post type.
+    \Includes\postType();
+
+    // Register includes taxonomy.
+    \Includes\taxonomy();
+
+    // Register shortcode: [includes]
+    \add_shortcode(
+        'includes',
+        '\Includes\shortcode'
     );
 }
