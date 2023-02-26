@@ -46,3 +46,64 @@ function settings(string $key): string|array
 
     return $settings[$key];
 }
+
+require_once __DIR__.'/inc/functions/option/delete.php';
+require_once __DIR__.'/inc/functions/option/get.php';
+require_once __DIR__.'/inc/functions/option/setting.php';
+require_once __DIR__.'/inc/functions/option/update.php';
+
+require_once __DIR__.'/inc/functions/plugin-admin/adminNotices.php';
+require_once __DIR__.'/inc/functions/plugin-admin/postObject.php';
+require_once __DIR__.'/inc/functions/plugin-admin/postRedirect.php';
+require_once __DIR__.'/inc/functions/plugin-admin/queryString.php';
+require_once __DIR__.'/inc/functions/plugin-admin/securityCheck.php';
+
+require_once __DIR__.'/inc/functions/plugin-admin/posts/actions.php';
+require_once __DIR__.'/inc/functions/plugin-admin/posts/delete.php';
+require_once __DIR__.'/inc/functions/plugin-admin/posts/update.php';
+
+require_once __DIR__.'/inc/functions/plugin-admin/view/displayAdmin.php';
+require_once __DIR__.'/inc/functions/plugin-admin/view/enqueueScripts.php';
+require_once __DIR__.'/inc/functions/plugin-admin/view/includeTemplates.php';
+
+require_once __DIR__.'/inc/functions/registerPlugin.php';
+
+// Init backend plugin features.
+\add_action(
+    'plugins_loaded',
+    '\Includes\backend'
+);
+
+/**
+ * Load backend plugin features.
+ */
+function backend(): void
+{
+    if (false === \is_admin()) {
+        return;
+    }
+
+    // Load plugin menu and admin area templates.
+    \add_action(
+        'admin_menu',
+        '\Includes\PluginAdmin\View\displayAdmin'
+    );
+
+    // Enqueue plugin admin area stylesheet.
+    \add_action(
+        'admin_enqueue_scripts',
+        '\Includes\PluginAdmin\View\enqueueScripts'
+    );
+
+    // Update plugin settings.
+    \add_action(
+        'admin_post_update',
+        '\Includes\PluginAdmin\Posts\actions'
+    );
+
+    // Plugin admin area notices.
+    \add_action(
+        'admin_notices',
+        '\Includes\PluginAdmin\adminNotices'
+    );
+}
