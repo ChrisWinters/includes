@@ -3,7 +3,7 @@
  * Private function.
  */
 
-namespace Includes;
+namespace Includes\Register;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -12,7 +12,7 @@ if (false === defined('ABSPATH')) {
 /**
  * Validate user can register plugin and prepare plugin for use.
  */
-function registerPlugin(): void
+function activation(): void
 {
     global $pagenow;
 

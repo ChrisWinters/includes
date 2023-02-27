@@ -3,7 +3,7 @@
  * Public function.
  */
 
-namespace Includes;
+namespace Includes\Register;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -12,7 +12,7 @@ if (false === defined('ABSPATH')) {
 /**
  * Flush rules for old post type and taxonomy.
  */
-function deregisterPlugin(): void
+function deactivation(): void
 {
     \flush_rewrite_rules();
 }

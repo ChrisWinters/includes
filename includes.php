@@ -88,8 +88,8 @@ namespace Includes;
  require_once __DIR__.'/inc/functions/plugin-admin/view/enqueueScripts.php';
  require_once __DIR__.'/inc/functions/plugin-admin/view/includeTemplates.php';
 
- require_once __DIR__.'/inc/functions/deregisterPlugin.php';
- require_once __DIR__.'/inc/functions/registerPlugin.php';
+ require_once __DIR__.'/inc/functions/register/deactivation.php';
+ require_once __DIR__.'/inc/functions/register/activation.php';
 
  // Init backend plugin features.
  \add_action(
@@ -174,13 +174,13 @@ namespace Includes;
      // Flush rewrite rules.
      \register_activation_hook(
          __FILE__,
-         '\Includes\registerPlugin'
+         '\Includes\Register\activation'
      );
 
      // Flush rewrite rules.
      \register_deactivation_hook(
          __FILE__,
-         '\Includes\deregisterPlugin'
+         '\Includes\Register\deactivation'
      );
  }
 
