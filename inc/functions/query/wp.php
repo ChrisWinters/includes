@@ -26,6 +26,7 @@ function wp(array $queryArgs, bool $code = false): string
             $query->the_post();
 
             if (true === $code) {
+                // Get includes code content.
                 $content = \get_post_meta($query->posts[0]->ID, 'includes-code', true);
 
                 if (true === empty($content)) {
@@ -33,15 +34,18 @@ function wp(array $queryArgs, bool $code = false): string
                 }
 
                 try {
+                    // Display code content from post slug.
                     eval('?>'.html_entity_decode($content, ENT_QUOTES | ENT_XML1, 'UTF-8'));
                 } catch (\Throwable $t) {
                     return '';
                 }
             } else {
+                // Display editor content from post slug.
                 \the_content();
             }
         }
 
+        // Clear custom query.
         $query->reset_postdata();
 
         return ob_get_clean();
