@@ -35,9 +35,6 @@ namespace Includes;
          'error_message' => \__('No action taken. Select an option first.', 'includes'),
          'version_message' => \__('WordPress 3.8 is required! Upgrade WordPress and try again.', 'includes'),
          'template_path' => dirname(__FILE__).'\inc\templates',
-         'admin_tabs' => [
-             'settings' => \__('Settings', 'includes'),
-         ],
      ];
 
      return $settings[$key];
