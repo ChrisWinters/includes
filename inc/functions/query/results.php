@@ -10,7 +10,7 @@ if (false === defined('ABSPATH')) {
 }
 
 /**
- * Query the WordPress Query class.
+ * Query the WordPress Query class and return results.
  *
  * @param string $queryArgs WP Query Arguments.
  * @param bool   $code      True to enable code
