@@ -1,16 +1,12 @@
 <?php
 /**
- * View Post Type Content.
- *
- * @author     Chris W. <chrisw@null.net>
- * @license    GNU GPLv3
- *
- * @see       /LICENSE
+ * Private post type template viewer.
  */
 if (false === defined('ABSPATH')) {
     exit;
 }
 
+// Logged in and administrators only.
 if (
     true !== \is_user_logged_in() ||
     true !== \current_user_can('administrator')

@@ -1,6 +1,6 @@
 <?php
 /**
- * Public function.
+ * Global function.
  */
 
 namespace Includes;

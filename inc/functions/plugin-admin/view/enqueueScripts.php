@@ -1,6 +1,6 @@
 <?php
 /**
- * Public admin area function: view.
+ * Public admin area function.
  */
 
 namespace Includes\PluginAdmin\View;

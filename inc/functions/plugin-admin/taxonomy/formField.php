@@ -1,6 +1,6 @@
 <?php
 /**
- * Public function.
+ * Public admin area function.
  */
 
 namespace Includes\PluginAdmin\Taxonomy;

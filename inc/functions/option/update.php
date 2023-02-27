@@ -1,6 +1,6 @@
 <?php
 /**
- * Private admin area function.
+ * Global function.
  */
 
 namespace Includes\Option;

@@ -34,5 +34,5 @@ function actions(): void
     }
 
     // Redirect user back to plugin admin area.
-    \Includes\PluginAdmin\postRedirect($status);
+    \Includes\PluginAdmin\Post\redirect($status);
 }

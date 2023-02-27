@@ -1,6 +1,6 @@
 <?php
 /**
- * Backend function.
+ * Private function.
  */
 
 namespace Includes;

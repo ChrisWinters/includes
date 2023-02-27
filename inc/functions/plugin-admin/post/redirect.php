@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin;
+namespace Includes\PluginAdmin\Post;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -12,7 +12,7 @@ if (false === defined('ABSPATH')) {
 /**
  * Return to plugin admin area with status message flag.
  */
-function postRedirect(
+function redirect(
     string $status = 'success'
 ): void {
     // Set update notice flag.
