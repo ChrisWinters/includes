@@ -12,17 +12,17 @@ if (false === defined('ABSPATH')) {
 /**
  * Update setting WordPress option with new data.
  *
- * @param mixed  $optionData       the data to save
- * @param string $appendOptionName optional string to add to the option name
+ * @param mixed  $optionData the data to save
+ * @param string $append     optional string to add to the option name
  */
 function update(
     mixed $optionData,
-    string $appendOptionName = ''
+    string $append = ''
 ): void {
-    $appendOptionName = (true !== empty($appendOptionName)) ? '-'.$appendOptionName : '';
+    $append = (true !== empty($append)) ? '-'.$append : '';
 
     \update_option(
-        'includes'.$appendOptionName,
+        'includes'.$append,
         \maybe_serialize($optionData)
     );
 }

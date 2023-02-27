@@ -12,14 +12,14 @@ if (false === defined('ABSPATH')) {
 /**
  * Get setting from saved plugin option data.
  *
- * @param string $settingKey       the key name to get from the setting option array
- * @param string $appendOptionName optional string to add to the option name
+ * @param string $settingKey the key name to get from the setting option array
+ * @param string $append     optional string to add to the option name
  */
 function setting(
     string $settingKey,
-    string $appendOptionName = ''
+    string $append = ''
 ): string|array|bool {
-    $option = \Includes\option\get($appendOptionName);
+    $option = \Includes\option\get($append);
 
     if (true !== empty($option[$settingKey])) {
         $setting = $option[$settingKey];

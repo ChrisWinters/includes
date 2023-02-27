@@ -12,12 +12,12 @@ if (false === defined('ABSPATH')) {
 /**
  * Delete a WordPress option.
  *
- * @param string $appendOptionName optional string to add to the option name
+ * @param string $append optional string to add to the option name
  */
 function delete(
-    string $appendOptionName = ''
+    string $append = ''
 ): void {
-    $appendOptionName = (true !== empty($appendOptionName)) ? '-'.$appendOptionName : '';
+    $append = (true !== empty($append)) ? '-'.$append : '';
 
-    \delete_option('includes'.$appendOptionName);
+    \delete_option('includes'.$append);
 }
