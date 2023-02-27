@@ -30,7 +30,7 @@ function order(string $order, array $wpQuery): array
         unset($wpQuery['order']);
 
         $wpQuery = array_merge(
-            $wpQuery,
+            (array) $wpQuery,
             [
                 'order' => (string) strtoupper($order),
             ]

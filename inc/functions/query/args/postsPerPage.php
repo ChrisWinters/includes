@@ -20,7 +20,7 @@ function postsPerPage(int $postsPerPage, array $wpQuery): array
     unset($wpQuery['nopaging']);
 
     return array_merge(
-        $wpQuery,
+        (array) $wpQuery,
         [
             'posts_per_page' => (int) $postsPerPage,
         ]

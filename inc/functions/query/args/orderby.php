@@ -35,7 +35,7 @@ function orderby(string $orderby, array $wpQuery): array
         unset($wpQuery['orderby']);
 
         $wpQuery = array_merge(
-            $wpQuery,
+            (array) $wpQuery,
             [
                 'orderby' => (string) $orderby,
             ]
