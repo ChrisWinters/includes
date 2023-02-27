@@ -16,9 +16,9 @@ function template(): void
 {
     \add_filter(
         'template_include',
-        function ($template) {
-            $postID = \get_the_ID();
-            $postType = \get_post_type($postID);
+        function (string $template) {
+            $postID = (int) \get_the_ID();
+            $postType = (string) \get_post_type($postID);
 
             if ('includes' === $postType) {
                 $template = \Includes\settings('template_path').'/viewer.php';
