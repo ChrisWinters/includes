@@ -9,7 +9,7 @@
   * Author: Chris Winters
   * Text Domain: includes
   * Author URI: https://github.com/ChrisWinters
-  * Copyright ( c ) 2017-2023 Chris Winters.
+  * Copyright ( c ) 2014-2023 Chris Winters.
   */
 
 namespace Includes;
