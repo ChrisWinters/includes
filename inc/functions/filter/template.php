@@ -17,10 +17,7 @@ function template(): void
     \add_filter(
         'template_include',
         function (string $template) {
-            $postID = (int) \get_the_ID();
-            $postType = (string) \get_post_type($postID);
-
-            if ('includes' === $postType) {
+            if (true === \is_singular('includes')) {
                 $template = \Includes\settings('template_path').'/viewer.php';
             }
 
