@@ -48,5 +48,5 @@ function shortcode(array $atts = []): string
         return '';
     }
 
-    return \Includes\Query\wp($args, $codeStatus);
+    return \Includes\Query\results($args, $codeStatus);
 }

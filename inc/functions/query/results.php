@@ -15,7 +15,7 @@ if (false === defined('ABSPATH')) {
  * @param string $queryArgs WP Query Arguments.
  * @param bool   $code      True to enable code
  */
-function wp(array $queryArgs, bool $code = false): string
+function results(array $queryArgs, bool $code = false): string
 {
     $query = new \WP_Query($queryArgs);
 
