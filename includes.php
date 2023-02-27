@@ -82,6 +82,8 @@ require_once __DIR__.'/inc/functions/plugin-admin/posts/actions.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/delete.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posts/update.php';
 
+require_once __DIR__.'/inc/functions/plugin-admin/taxonomy/formField.php';
+
 require_once __DIR__.'/inc/functions/query/wp.php';
 require_once __DIR__.'/inc/functions/query/args/category.php';
 require_once __DIR__.'/inc/functions/query/args/order.php';
@@ -160,6 +162,13 @@ function backend(): void
         '\Includes\PluginAdmin\PostType\columnContent',
         10,
         2
+    );
+
+    \add_action(
+        'includes_edit_form_fields',
+        '\Includes\PluginAdmin\Taxonomy\formField',
+        10,
+        1
     );
 
     // Plugin admin area notices.
