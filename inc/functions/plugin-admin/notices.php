@@ -12,7 +12,7 @@ if (false === defined('ABSPATH')) {
 /**
  * Display admin area notice.
  */
-function adminNotices(): void
+function notices(): void
 {
     $currentPage = \Includes\PluginAdmin\queryString('page');
 

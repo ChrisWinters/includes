@@ -62,7 +62,7 @@ require_once __DIR__.'/inc/functions/filter/template.php';
 require_once __DIR__.'/inc/functions/filter/widgetText.php';
 require_once __DIR__.'/inc/functions/filter/widgetTitles.php';
 
-require_once __DIR__.'/inc/functions/plugin-admin/adminNotices.php';
+require_once __DIR__.'/inc/functions/plugin-admin/notices.php';
 require_once __DIR__.'/inc/functions/plugin-admin/postObject.php';
 require_once __DIR__.'/inc/functions/plugin-admin/postRedirect.php';
 require_once __DIR__.'/inc/functions/plugin-admin/queryString.php';
@@ -174,7 +174,7 @@ function backend(): void
     // Plugin admin area notices.
     \add_action(
         'admin_notices',
-        '\Includes\PluginAdmin\adminNotices'
+        '\Includes\PluginAdmin\notices'
     );
 }
 
