@@ -16,7 +16,7 @@ function template(): void
 {
     \add_filter(
         'template_include',
-        function (string $template) {
+        function (string $template): string {
             if (true === \is_singular('includes')) {
                 $template = \Includes\settings('template_path').'/viewer.php';
             }
