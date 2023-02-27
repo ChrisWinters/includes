@@ -88,6 +88,7 @@ namespace Includes;
  require_once __DIR__.'/inc/functions/plugin-admin/view/enqueueScripts.php';
  require_once __DIR__.'/inc/functions/plugin-admin/view/includeTemplates.php';
 
+ require_once __DIR__.'/inc/functions/deregisterPlugin.php';
  require_once __DIR__.'/inc/functions/registerPlugin.php';
 
  // Init backend plugin features.
@@ -168,6 +169,18 @@ namespace Includes;
      \add_action(
          'admin_notices',
          '\Includes\PluginAdmin\notices'
+     );
+
+     // Flush rewrite rules.
+     \register_activation_hook(
+         __FILE__,
+         '\Includes\registerPlugin'
+     );
+
+     // Flush rewrite rules.
+     \register_deactivation_hook(
+         __FILE__,
+         '\Includes\deregisterPlugin'
      );
  }
 
