@@ -3,7 +3,7 @@
  * Private admin area function.
  */
 
-namespace Includes\PluginAdmin\Posts;
+namespace Includes\PluginAdmin\Post;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -25,12 +25,12 @@ function actions(): void
 
     // Update plugin settings based on selections.
     if ('update' === $postObject['action']) {
-        $status = \Includes\PluginAdmin\Posts\update($postObject);
+        $status = \Includes\PluginAdmin\Post\update($postObject);
     }
 
     // Delete all plugin settings.
     if ('delete' === $postObject['action'] && 'delete' === $postObject['confirm']) {
-        $status = \Includes\PluginAdmin\Posts\delete();
+        $status = \Includes\PluginAdmin\Post\delete();
     }
 
     // Redirect user back to plugin admin area.

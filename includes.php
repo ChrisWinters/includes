@@ -78,9 +78,9 @@ require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnContent.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnShortcode.php';
 require_once __DIR__.'/inc/functions/plugin-admin/posttype/modifyColumns.php';
 
-require_once __DIR__.'/inc/functions/plugin-admin/posts/actions.php';
-require_once __DIR__.'/inc/functions/plugin-admin/posts/delete.php';
-require_once __DIR__.'/inc/functions/plugin-admin/posts/update.php';
+require_once __DIR__.'/inc/functions/plugin-admin/post/actions.php';
+require_once __DIR__.'/inc/functions/plugin-admin/post/delete.php';
+require_once __DIR__.'/inc/functions/plugin-admin/post/update.php';
 
 require_once __DIR__.'/inc/functions/plugin-admin/taxonomy/formField.php';
 
@@ -133,7 +133,7 @@ function backend(): void
     // Update plugin settings.
     \add_action(
         'admin_post_update',
-        '\Includes\PluginAdmin\Posts\actions'
+        '\Includes\PluginAdmin\Post\actions'
     );
 
     // Add MetaBoxes.
