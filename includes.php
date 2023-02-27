@@ -63,7 +63,6 @@ require_once __DIR__.'/inc/functions/filter/widgetText.php';
 require_once __DIR__.'/inc/functions/filter/widgetTitles.php';
 
 require_once __DIR__.'/inc/functions/plugin-admin/notices.php';
-require_once __DIR__.'/inc/functions/plugin-admin/postObject.php';
 require_once __DIR__.'/inc/functions/plugin-admin/postRedirect.php';
 require_once __DIR__.'/inc/functions/plugin-admin/queryString.php';
 require_once __DIR__.'/inc/functions/plugin-admin/securityCheck.php';
@@ -80,6 +79,7 @@ require_once __DIR__.'/inc/functions/plugin-admin/posttype/modifyColumns.php';
 
 require_once __DIR__.'/inc/functions/plugin-admin/post/actions.php';
 require_once __DIR__.'/inc/functions/plugin-admin/post/delete.php';
+require_once __DIR__.'/inc/functions/plugin-admin/post/object.php';
 require_once __DIR__.'/inc/functions/plugin-admin/post/update.php';
 
 require_once __DIR__.'/inc/functions/plugin-admin/taxonomy/formField.php';

@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin;
+namespace Includes\PluginAdmin\Post;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -12,7 +12,7 @@ if (false === defined('ABSPATH')) {
 /**
  * Builds filtered post object array.
  */
-function postObject(): array
+function object(): array
 {
     $allowedInputs = [
         'action' => FILTER_UNSAFE_RAW,

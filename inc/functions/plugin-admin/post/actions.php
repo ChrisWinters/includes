@@ -21,7 +21,7 @@ function actions(): void
     $status = 'error';
 
     // Filtered but not sanitized post object.
-    $postObject = \Includes\PluginAdmin\postObject();
+    $postObject = \Includes\PluginAdmin\Post\object();
 
     // Update plugin settings based on selections.
     if ('update' === $postObject['action']) {
