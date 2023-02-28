@@ -18,71 +18,13 @@ if (false === defined('ABSPATH')) {
     exit;
 }
 
+// Require plugin settings.
 require_once __DIR__.'/inc/settings.php';
 
-function autoloadFiles()
-{
-    $files = (array) \Includes\settings('files');
-
-    foreach ($files as $file) {
-        require_once __DIR__.'/inc/functions/'.$file;
-    }
+// Require allowed plugin functions.
+foreach ((array) \Includes\settings('files') as $file) {
+    require_once __DIR__.'/inc/functions/'.$file;
 }
-
-\Includes\autoloadFiles();
-
-// require_once __DIR__.'/inc/functions/args/postType.php';
-// require_once __DIR__.'/inc/functions/args/taxonomy.php';
-
-require_once __DIR__.'/inc/functions/option/delete.php';
-require_once __DIR__.'/inc/functions/option/get.php';
-require_once __DIR__.'/inc/functions/option/setting.php';
-require_once __DIR__.'/inc/functions/option/update.php';
-
-require_once __DIR__.'/inc/functions/filter/menuItems.php';
-require_once __DIR__.'/inc/functions/filter/postTitles.php';
-require_once __DIR__.'/inc/functions/filter/template.php';
-require_once __DIR__.'/inc/functions/filter/widgetText.php';
-require_once __DIR__.'/inc/functions/filter/widgetTitles.php';
-
-require_once __DIR__.'/inc/functions/plugin-admin/notices.php';
-require_once __DIR__.'/inc/functions/plugin-admin/queryString.php';
-require_once __DIR__.'/inc/functions/plugin-admin/securityCheck.php';
-
-require_once __DIR__.'/inc/functions/plugin-admin/metabox/add.php';
-require_once __DIR__.'/inc/functions/plugin-admin/metabox/editor.php';
-require_once __DIR__.'/inc/functions/plugin-admin/metabox/save.php';
-require_once __DIR__.'/inc/functions/plugin-admin/metabox/shortcode.php';
-
-require_once __DIR__.'/inc/functions/plugin-admin/post/actions.php';
-require_once __DIR__.'/inc/functions/plugin-admin/post/delete.php';
-require_once __DIR__.'/inc/functions/plugin-admin/post/redirect.php';
-require_once __DIR__.'/inc/functions/plugin-admin/post/object.php';
-require_once __DIR__.'/inc/functions/plugin-admin/post/update.php';
-
-require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnCategory.php';
-require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnContent.php';
-require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnShortcode.php';
-require_once __DIR__.'/inc/functions/plugin-admin/posttype/modifyColumns.php';
-
-require_once __DIR__.'/inc/functions/plugin-admin/taxonomy/formField.php';
-
-require_once __DIR__.'/inc/functions/plugin-admin/view/displayAdmin.php';
-require_once __DIR__.'/inc/functions/plugin-admin/view/enqueueScripts.php';
-require_once __DIR__.'/inc/functions/plugin-admin/view/includeTemplates.php';
-
-require_once __DIR__.'/inc/functions/query/results.php';
-require_once __DIR__.'/inc/functions/query/args/category.php';
-require_once __DIR__.'/inc/functions/query/args/order.php';
-require_once __DIR__.'/inc/functions/query/args/orderby.php';
-require_once __DIR__.'/inc/functions/query/args/postsPerPage.php';
-require_once __DIR__.'/inc/functions/query/args/single.php';
-
-require_once __DIR__.'/inc/functions/register/deactivation.php';
-require_once __DIR__.'/inc/functions/register/activation.php';
-
-require_once __DIR__.'/inc/functions/shortcode/code.php';
-require_once __DIR__.'/inc/functions/shortcode/includes.php';
 
 // Init backend plugin features.
 \add_action(
