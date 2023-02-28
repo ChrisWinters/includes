@@ -23,7 +23,7 @@ require_once __DIR__.'/inc/settings.php';
 
 // Require allowed plugin files.
 foreach ((array) \Includes\settings('files') as $file) {
-    require_once __DIR__.'/inc/'.$file;
+    require_once __DIR__.'/inc/'.(string) $file;
 }
 
 // Init backend plugin features.
