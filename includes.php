@@ -198,7 +198,7 @@ namespace Includes;
      // Register shortcode: [includes]
      \add_shortcode(
          'includes',
-         '\Includes\shortcode'
+         '\Includes\Shortcode\includes'
      );
 
      // Inject viewer into template include path.

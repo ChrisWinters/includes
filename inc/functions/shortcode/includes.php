@@ -3,7 +3,7 @@
  * Global function.
  */
 
-namespace Includes;
+namespace Includes\Shortcode;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  *
  * @param array $atts Shortcode attributes.
  */
-function shortcode(array $atts = []): string
+function includes(array $atts = []): string
 {
     // Defaults to the_content over code post meta.
     $codeStatus = (
