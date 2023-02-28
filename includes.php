@@ -40,10 +40,8 @@ namespace Includes;
      return $settings[$key];
  }
 
- require_once __DIR__.'/inc/functions/postType.php';
- require_once __DIR__.'/inc/functions/shortcode/code.php';
- require_once __DIR__.'/inc/functions/shortcode/includes.php';
- require_once __DIR__.'/inc/functions/taxonomy.php';
+ require_once __DIR__.'/inc/functions/args/postType.php';
+ require_once __DIR__.'/inc/functions/args/taxonomy.php';
 
  require_once __DIR__.'/inc/functions/option/delete.php';
  require_once __DIR__.'/inc/functions/option/get.php';
@@ -65,18 +63,22 @@ namespace Includes;
  require_once __DIR__.'/inc/functions/plugin-admin/metabox/save.php';
  require_once __DIR__.'/inc/functions/plugin-admin/metabox/shortcode.php';
 
- require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnCategory.php';
- require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnContent.php';
- require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnShortcode.php';
- require_once __DIR__.'/inc/functions/plugin-admin/posttype/modifyColumns.php';
-
  require_once __DIR__.'/inc/functions/plugin-admin/post/actions.php';
  require_once __DIR__.'/inc/functions/plugin-admin/post/delete.php';
  require_once __DIR__.'/inc/functions/plugin-admin/post/redirect.php';
  require_once __DIR__.'/inc/functions/plugin-admin/post/object.php';
  require_once __DIR__.'/inc/functions/plugin-admin/post/update.php';
 
+ require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnCategory.php';
+ require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnContent.php';
+ require_once __DIR__.'/inc/functions/plugin-admin/posttype/columnShortcode.php';
+ require_once __DIR__.'/inc/functions/plugin-admin/posttype/modifyColumns.php';
+
  require_once __DIR__.'/inc/functions/plugin-admin/taxonomy/formField.php';
+
+ require_once __DIR__.'/inc/functions/plugin-admin/view/displayAdmin.php';
+ require_once __DIR__.'/inc/functions/plugin-admin/view/enqueueScripts.php';
+ require_once __DIR__.'/inc/functions/plugin-admin/view/includeTemplates.php';
 
  require_once __DIR__.'/inc/functions/query/results.php';
  require_once __DIR__.'/inc/functions/query/args/category.php';
@@ -85,12 +87,11 @@ namespace Includes;
  require_once __DIR__.'/inc/functions/query/args/postsPerPage.php';
  require_once __DIR__.'/inc/functions/query/args/single.php';
 
- require_once __DIR__.'/inc/functions/plugin-admin/view/displayAdmin.php';
- require_once __DIR__.'/inc/functions/plugin-admin/view/enqueueScripts.php';
- require_once __DIR__.'/inc/functions/plugin-admin/view/includeTemplates.php';
-
  require_once __DIR__.'/inc/functions/register/deactivation.php';
  require_once __DIR__.'/inc/functions/register/activation.php';
+
+ require_once __DIR__.'/inc/functions/shortcode/code.php';
+ require_once __DIR__.'/inc/functions/shortcode/includes.php';
 
  // Init backend plugin features.
  \add_action(
@@ -191,12 +192,22 @@ namespace Includes;
  function plugin(): void
  {
      // Register includes post type.
-     \Includes\postType();
+     \register_post_type(
+         'includes',
+         \Includes\Args\postType()
+     );
 
      // Register includes taxonomy.
-     \Includes\taxonomy();
+     \register_taxonomy(
+         'includes',
+         [
+             'includes',
+         ],
+         \Includes\Args\taxonomy()
+     );
 
-     // Register shortcode: [includes]
+     // Shortcode: [includes]
+     // Shortcode: [includes code=true]
      \add_shortcode(
          'includes',
          '\Includes\Shortcode\includes'
