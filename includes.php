@@ -21,7 +21,7 @@ if (false === defined('ABSPATH')) {
 // Require plugin settings.
 require_once __DIR__.'/inc/settings.php';
 
-// Require allowed plugin functions.
+// Require allowed plugin files.
 foreach ((array) \Includes\settings('files') as $file) {
     require_once __DIR__.'/inc/'.$file;
 }
