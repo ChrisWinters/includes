@@ -29,19 +29,19 @@ foreach ((array) \Includes\settings('files') as $file) {
 // Init backend plugin features.
 \add_action(
     'plugins_loaded',
-    '\Includes\backend'
+    '\Includes\loadBackend'
 );
 
 // Init global plugin features.
 \add_action(
     'init',
-    '\Includes\plugin'
+    '\Includes\initPlugin'
 );
 
 /**
  * Load backend plugin features.
  */
-function backend(): void
+function loadBackend(): void
 {
     if (false === \is_admin()) {
         return;
@@ -122,7 +122,7 @@ function backend(): void
 /**
  * Load global plugin features.
  */
-function plugin(): void
+function initPlugin(): void
 {
     // Register includes post type.
     \register_post_type(
