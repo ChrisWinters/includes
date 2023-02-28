@@ -40,10 +40,10 @@ namespace Includes;
      return $settings[$key];
  }
 
- require_once __DIR__.'/inc/functions/taxonomy.php';
  require_once __DIR__.'/inc/functions/postType.php';
  require_once __DIR__.'/inc/functions/shortcode/code.php';
  require_once __DIR__.'/inc/functions/shortcode/includes.php';
+ require_once __DIR__.'/inc/functions/taxonomy.php';
 
  require_once __DIR__.'/inc/functions/option/delete.php';
  require_once __DIR__.'/inc/functions/option/get.php';
