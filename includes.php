@@ -42,7 +42,8 @@ namespace Includes;
 
  require_once __DIR__.'/inc/functions/taxonomy.php';
  require_once __DIR__.'/inc/functions/postType.php';
- require_once __DIR__.'/inc/functions/shortcode.php';
+ require_once __DIR__.'/inc/functions/shortcode/code.php';
+ require_once __DIR__.'/inc/functions/shortcode/includes.php';
 
  require_once __DIR__.'/inc/functions/option/delete.php';
  require_once __DIR__.'/inc/functions/option/get.php';
@@ -199,6 +200,12 @@ namespace Includes;
      \add_shortcode(
          'includes',
          '\Includes\Shortcode\includes'
+     );
+
+     // Legacy shortcode: [code]
+     \add_shortcode(
+         'includes',
+         '\Includes\Shortcode\code'
      );
 
      // Inject viewer into template include path.
