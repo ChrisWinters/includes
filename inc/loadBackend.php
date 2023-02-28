@@ -64,6 +64,7 @@ function loadBackend(): void
         2
     );
 
+    // Inject shortcode form field on taxonomy terms.
     \add_action(
         'includes_edit_form_fields',
         '\Includes\PluginAdmin\Taxonomy\formField',
@@ -79,13 +80,13 @@ function loadBackend(): void
 
     // Flush rewrite rules.
     \register_activation_hook(
-        __FILE__,
+        INCLUDES_FILE,
         '\Includes\Register\activation'
     );
 
     // Flush rewrite rules.
     \register_deactivation_hook(
-        __FILE__,
+        INCLUDES_FILE,
         '\Includes\Register\deactivation'
     );
 }

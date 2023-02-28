@@ -25,7 +25,7 @@ function settings(string $key): string|array
         'deleted_message' => \__('All settings deleted.', 'includes'),
         'error_message' => \__('No action taken. Select an option first.', 'includes'),
         'version_message' => \__('WordPress 3.8 is required! Upgrade WordPress and try again.', 'includes'),
-        'template_path' => dirname(__FILE__).'\inc\templates',
+        'template_path' => dirname(INCLUDES_FILE).'\inc\templates',
         'files' => [
             '/loadBackend.php',
             '/initPlugin.php',

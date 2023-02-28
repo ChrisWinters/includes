@@ -18,6 +18,8 @@ if (false === defined('ABSPATH')) {
     exit;
 }
 
+define('INCLUDES_FILE', __FILE__);
+
 // Require plugin settings.
 require_once __DIR__.'/inc/settings.php';
 
