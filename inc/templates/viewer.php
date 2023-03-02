@@ -16,30 +16,17 @@ if (
 }
 
 $postID = \get_the_ID();
-$postType = \get_post_type($postID);
-
-if ('includes' !== $postType) {
-    \wp_safe_redirect(\get_bloginfo('url'));
-    exit;
-}
-
-// Removes admin bar.
-\add_filter('show_admin_bar', '__return_false');
-\show_admin_bar(false);
-
-// Replaces double line-breaks with paragraph elements.
-\remove_filter('the_content', 'wpautop');
 ?>
-	<!DOCTYPE html>
-	<html <?php \language_attributes(); ?> class="no-js no-svg">
-	<head>
-		<title></title>
-	<meta charset="<?php \bloginfo('charset'); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php \wp_head(); ?>
-	</head>
-	<body <?php \body_class(); ?>>
+<!DOCTYPE html>
+<html <?php \language_attributes(); ?> class="no-js no-svg">
+<head>
+<title></title>
+<meta charset="<?php \bloginfo('charset'); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<?php \wp_head(); ?>
+</head>
+<body <?php \body_class('includes'); ?>>
 <?php
 if (filter_input(INPUT_GET, 'type') === 'code') {
     $content = \get_post_meta($postID, 'code', true);
