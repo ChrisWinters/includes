@@ -16,6 +16,10 @@ if (false === defined('ABSPATH')) {
  */
 function save(int $postID): void
 {
+    if (true === empty(\Includes\Option\setting('shortcode_code'))) {
+        return;
+    }
+
     // Ignore autosave feature.
     if (true === defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
         return;

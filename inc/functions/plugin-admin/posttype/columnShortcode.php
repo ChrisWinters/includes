@@ -26,7 +26,7 @@ function columnShortcode(int $post_id, string $post_slug): void
 
     if ((bool) 1 === \Includes\Option\setting('shortcode_code')) {
         $shortCode = htmlentities('[code slug="'.$post_slug.'"]', ENT_QUOTES);
-        $html .= "<br /><a href=\"{$permalink}&type=code\" target=\"_blank\">{$dashIcon}</a> <input type=\"text\" name=\"includes_codes\" value=\"{$shortCode}\" style=\"width:80%\" onclick=\"this.focus();this.select()\" />";
+        $html .= "<br /><a href=\"{$permalink}?type=code\" target=\"_blank\">{$dashIcon}</a> <input type=\"text\" name=\"includes_codes\" value=\"{$shortCode}\" style=\"width:80%\" onclick=\"this.focus();this.select()\" />";
     }
 
     echo $html;
