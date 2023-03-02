@@ -16,10 +16,6 @@ if (false === defined('ABSPATH')) {
  */
 function editor(object $post): void
 {
-    if (true === empty($post)) {
-        return;
-    }
-
     // Get MetaBox fields.
     $fields = (array) \get_post_custom($post->ID);
 
