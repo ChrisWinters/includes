@@ -17,6 +17,11 @@ if (false === defined('ABSPATH')) {
  */
 function columnContent(string $column, int $post_id): void
 {
+    // Disable if viewing post trash.
+    if ('trash' === (string) \Includes\Admin\queryString('post_status')) {
+        return;
+    }
+
     // Show selected categories content.
     if ('category' === $column) {
         \Includes\Admin\PostType\columnCategory($post_id);
