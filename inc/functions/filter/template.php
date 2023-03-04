@@ -14,15 +14,15 @@ if (false === defined('ABSPATH')) {
  */
 function template(): void
 {
-    if (true === \is_blog_admin()) {
+    if (true === \is_admin()) {
         return;
     }
 
     // Only load if the requested URI is the includes post type.
     // Cannot check for post type yet, but need to disable features.
     if (
-        true === isset($GLOBALS['REQUEST_URI']) &&
-        false === str_contains($GLOBALS['REQUEST_URI'], 'includes')
+        true === isset($_SERVER['REQUEST_URI']) &&
+        false === str_contains($_SERVER['REQUEST_URI'], 'includes')
     ) {
         return;
     }
