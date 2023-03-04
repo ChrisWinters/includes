@@ -26,6 +26,16 @@ function settings(string $key): string|array
         'error_message' => \__('No action taken. Select an option first.', 'includes'),
         'version_message' => \__('WordPress 3.8 is required! Upgrade WordPress and try again.', 'includes'),
         'template_path' => dirname(INCLUDES_FILE).'\inc\templates',
+        'allowed_inputs' => [
+            'shortcode_viewer' => FILTER_VALIDATE_BOOL,
+            'shortcode_fields' => FILTER_VALIDATE_BOOL,
+            'shortcode_code' => FILTER_VALIDATE_BOOL,
+            'shortcode_terms' => FILTER_VALIDATE_BOOL,
+            'shortcode_posts_pages' => FILTER_VALIDATE_BOOL,
+            'shortcode_post_titles' => FILTER_VALIDATE_BOOL,
+            'shortcode_menus' => FILTER_VALIDATE_BOOL,
+            'shortcode_widget_titles' => FILTER_VALIDATE_BOOL,
+        ],
         'files' => [
             '/loadBackend.php',
             '/initPlugin.php',
