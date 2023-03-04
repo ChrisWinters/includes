@@ -7303,3 +7303,7 @@ input[type=radio]:checked::before {
 #poststuff h2, #poststuff .h2 {
   padding-left: 0;
 }
+#poststuff .description {
+  display: block;
+  font-weight: normal;
+}
