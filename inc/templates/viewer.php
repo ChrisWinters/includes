@@ -28,8 +28,8 @@ $postID = \get_the_ID();
 </head>
 <body <?php \body_class('includes'); ?>>
 <?php
-if (filter_input(INPUT_GET, 'type') === 'code') {
-    $content = \get_post_meta($postID, 'code', true);
+if ('code' === filter_input(INPUT_GET, 'type')) {
+    $content = \get_post_meta($postID, 'includes_code', true);
 
     try {
         eval('?>'.html_entity_decode($content, ENT_QUOTES | ENT_XML1, 'UTF-8'));
