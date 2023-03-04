@@ -22,10 +22,9 @@ define('INCLUDES_FILE', __FILE__);
 
 /**
  * Require allowed files.
- *
- * @return void
  */
-function requiredFiles() {
+function requiredFiles(): void
+{
     // Require plugin settings.
     require_once __DIR__.'/inc/settings.php';
 
