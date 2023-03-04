@@ -16,6 +16,11 @@ if (false === defined('ABSPATH')) {
  */
 function modifyColumns(array $columns): array
 {
+    // Disable if viewing post trash.
+    if ('trash' === (string) \Includes\Admin\queryString('post_status')) {
+        return $columns;
+    }
+
     $title = $columns['title'];
     $author = $columns['author'];
     $date = $columns['date'];
