@@ -17,11 +17,17 @@ if (false === defined('ABSPATH')) {
  */
 function columnContent(string $column, int $post_id): void
 {
+    // Show selected categories content.
     if ('category' === $column) {
         \Includes\Admin\PostType\columnCategory($post_id);
     }
 
-    if ('shortcode' === $column) {
+    // Display shortcode input(s).
+    // Plugin setting: True displays shortcode column.
+    if (
+        'shortcode' === $column &&
+        true === (bool) \Includes\Option\setting('shortcode_fields')
+    ) {
         global $post;
 
         \Includes\Admin\PostType\columnShortcode($post_id, $post->post_name);
