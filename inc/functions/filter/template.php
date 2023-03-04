@@ -14,16 +14,22 @@ if (false === defined('ABSPATH')) {
  */
 function template(): void
 {
+    // Frontend only.
     if (true === \is_admin()) {
         return;
     }
 
     // Only load if the requested URI is the includes post type.
-    // Cannot check for post type yet, but need to disable features.
+    // Cannot check for post type yet, but may need to disable feature.
     if (
         true === isset($_SERVER['REQUEST_URI']) &&
         false === str_contains($_SERVER['REQUEST_URI'], 'includes')
     ) {
+        return;
+    }
+
+    // Plugin setting: True uses theme templates to view shortcode content.
+    if (true !== (bool) \Includes\Option\setting('shortcode_viewer')) {
         return;
     }
 
