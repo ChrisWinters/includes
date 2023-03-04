@@ -47,9 +47,13 @@ function columnCategory(int $post_id): void
             $comma = '';
         }
 
-        $html .= '<a href="edit.php?post_type=includes&'.
-        'includes='.\sanitize_key($category->slug).'">'.
-        \esc_html($category->name).'</a>'.$comma;
+        if ('trash' === (string) \Includes\Admin\queryString('post_status')) {
+            $html .= \esc_html($category->name).$comma;
+        } else {
+            $html .= '<a href="edit.php?post_type=includes&taxonomy=includes'.
+            '&term='.\sanitize_key($category->slug).'">'.
+            \esc_html($category->name).'</a>'.$comma;
+        }
     }
 
     echo $html;
