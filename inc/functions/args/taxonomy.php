@@ -17,7 +17,7 @@ function taxonomy(): array
     return [
         'hierarchical' => true,
         'show_ui' => true,
-        'query_var' => true,
+        'query_var' => false,
         'show_admin_column' => false,
         'rewrite' => [
             'slug' => 'includes',
