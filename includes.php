@@ -20,13 +20,22 @@ if (false === defined('ABSPATH')) {
 
 define('INCLUDES_FILE', __FILE__);
 
-// Require plugin settings.
-require_once __DIR__.'/inc/settings.php';
+/**
+ * Require allowed files.
+ *
+ * @return void
+ */
+function requiredFiles() {
+    // Require plugin settings.
+    require_once __DIR__.'/inc/settings.php';
 
-// Require allowed plugin files.
-foreach ((array) \Includes\settings('files') as $file) {
-    require_once __DIR__.'/inc/'.(string) $file;
+    // Require allowed plugin files.
+    foreach ((array) \Includes\settings('files') as $file) {
+        require_once __DIR__.'/inc/'.(string) $file;
+    }
 }
+
+\Includes\requiredFiles();
 
 // Init backend plugin features.
 \add_action(
