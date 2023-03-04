@@ -26,42 +26,49 @@ if (false === defined('ABSPATH')) {
 		<li class="list-group-item my-3">
 			<input class="form-check-input me-1" name="shortcode_code" type="checkbox" value="1" id="shortcode"<?php checked((bool) 1, \Includes\Option\setting('shortcode_code')); ?>>
 			<label class="form-check-label fw-bold" for="shortcode">
-				<?php \esc_html_e('Enable code editor and render saved code within the includes shortcode', 'includes'); ?>
+				<?php \esc_html_e('Enable code editor and allow the Includes shortcode to render saved code', 'includes'); ?>
 			</label>
 		</li>
 
 		<li class="list-group-item mb-3">
 			<input class="form-check-input me-1" name="shortcode_terms" type="checkbox" value="1" id="terms"<?php checked((bool) 1, \Includes\Option\setting('shortcode_terms')); ?>>
 			<label class="form-check-label fw-bold" for="terms">
-				<?php \esc_html_e('Display includes shortcode on category term pages', 'includes'); ?></span>
+				<?php \esc_html_e('Display Includes shortcode on category term pages', 'includes'); ?>
 			</label>
 		</li>
 
 		<li class="list-group-item mb-3">
 			<input class="form-check-input me-1" name="shortcode_posts_pages" type="checkbox" value="1" id="posts_pages"<?php checked((bool) 1, \Includes\Option\setting('shortcode_posts_pages')); ?>>
 			<label class="form-check-label fw-bold" for="posts_pages">
-				<?php \esc_html_e('Allow slugs from posts and pages to be used by the includes shortcode', 'includes'); ?></span>
+				<?php \esc_html_e('Allow "slugs" from posts and pages to be used by the Includes shortcode', 'includes'); ?>
 			</label>
 		</li>
 
 		<li class="list-group-item mb-3">
 			<input class="form-check-input me-1" name="shortcode_post_titles" type="checkbox" value="1" id="post_titles"<?php checked((bool) 1, \Includes\Option\setting('shortcode_post_titles')); ?>>
 			<label class="form-check-label fw-bold" for="post_titles">
-				<?php \esc_html_e('Allow post and page titles to render the includes shortcode', 'includes'); ?></span>
+				<?php \esc_html_e('Allow post and page titles to render shortcodes', 'includes'); ?>
 			</label>
 		</li>
 
 		<li class="list-group-item mb-3">
 			<input class="form-check-input me-1" name="shortcode_menus" type="checkbox" value="1" id="menus"<?php checked((bool) 1, \Includes\Option\setting('shortcode_menus')); ?>>
 			<label class="form-check-label fw-bold" for="menus">
-				<?php \esc_html_e('Allow menus to render the includes shortcode', 'includes'); ?></span>
+				<?php \esc_html_e('Allow menus to render shortcodes', 'includes'); ?>
 			</label>
 		</li>
 
 		<li class="list-group-item mb-3">
 			<input class="form-check-input me-1" name="shortcode_widget_titles" type="checkbox" value="1" id="widgets"<?php checked((bool) 1, \Includes\Option\setting('shortcode_widget_titles')); ?>>
 			<label class="form-check-label fw-bold" for="widgets">
-				<?php \esc_html_e('Allow widgets to render the includes shortcode', 'includes'); ?></span>
+				<?php \esc_html_e('Allow widgets to render shortcodes', 'includes'); ?>
+			</label>
+		</li>
+
+		<li class="list-group-item mb-3">
+			<input class="form-check-input me-1" name="disable_viewer" type="checkbox" value="1" id="viewer"<?php checked((bool) 1, \Includes\Option\setting('disable_viewer')); ?>>
+			<label class="form-check-label fw-bold" for="viewer">
+				<?php \esc_html_e('Disable shortcode viewer: Use theme template files to view saved shortcode data', 'includes'); ?>
 			</label>
 		</li>
 	</ul>
