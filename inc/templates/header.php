@@ -18,6 +18,8 @@ if (false === defined('ABSPATH')) {
 
 	<div id="poststuff">
 		<div id="post-body" class="metabox-holder columns-2">
+			<h2><?php \esc_html_e('Plugin settings', 'includes'); ?></h2>
+
 			<div id="post-body-content">
 				<div class="postbox">
 					<div class="inside" id="top">
