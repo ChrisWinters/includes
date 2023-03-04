@@ -27,7 +27,12 @@ function modifyColumns(array $columns): array
 
     // Add columns.
     $columns['title'] = $title;
-    $columns['shortcode'] = __('Shortcode', 'includes');
+
+    // Plugin setting: True displays shortcode column.
+    if (true === (bool) \Includes\Option\setting('shortcode_fields')) {
+        $columns['shortcode'] = __('Shortcode', 'includes');
+    }
+
     $columns['category'] = __('Categories', 'includes');
     $columns['author'] = $author;
     $columns['date'] = $date;
