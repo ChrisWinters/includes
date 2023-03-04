@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\Taxonomy;
+namespace Includes\Admin\Taxonomy;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -16,7 +16,7 @@ if (false === defined('ABSPATH')) {
  */
 function formField(object $termObject): void
 {
-    if ('includes' !== \Includes\PluginAdmin\queryString('taxonomy')) {
+    if ('includes' !== \Includes\Admin\queryString('taxonomy')) {
         return;
     }
 

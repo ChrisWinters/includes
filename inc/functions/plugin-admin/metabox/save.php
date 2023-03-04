@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\MetaBox;
+namespace Includes\Admin\MetaBox;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -37,7 +37,7 @@ function save(int $postID): void
     }
 
     // Validate user level and nonce.
-    \Includes\PluginAdmin\securityCheck();
+    \Includes\Admin\securityCheck();
 
     // Get content from code editor to save.
     $content = trim(filter_input(INPUT_POST, 'includes_code'));

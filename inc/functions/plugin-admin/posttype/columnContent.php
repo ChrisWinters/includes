@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\PostType;
+namespace Includes\Admin\PostType;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -18,12 +18,12 @@ if (false === defined('ABSPATH')) {
 function columnContent(string $column, int $post_id): void
 {
     if ('category' === $column) {
-        \Includes\PluginAdmin\PostType\columnCategory($post_id);
+        \Includes\Admin\PostType\columnCategory($post_id);
     }
 
     if ('shortcode' === $column) {
         global $post;
 
-        \Includes\PluginAdmin\PostType\columnShortcode($post_id, $post->post_name);
+        \Includes\Admin\PostType\columnShortcode($post_id, $post->post_name);
     }
 }

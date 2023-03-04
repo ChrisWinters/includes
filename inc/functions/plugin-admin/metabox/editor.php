@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\MetaBox;
+namespace Includes\Admin\MetaBox;
 
 if (false === defined('ABSPATH')) {
     exit;

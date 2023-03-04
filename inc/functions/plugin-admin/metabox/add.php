@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\MetaBox;
+namespace Includes\Admin\MetaBox;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -19,7 +19,7 @@ function add(): void
         \add_meta_box(
             'includes_code',
             __('Includes code editor (PHP, JavaScript, etc)', 'includes'),
-            '\Includes\PluginAdmin\MetaBox\editor',
+            '\Includes\Admin\MetaBox\editor',
             'includes',
             'normal',
             'high',
@@ -31,7 +31,7 @@ function add(): void
     \add_meta_box(
         'includes_shortcode',
         __('Includes shortcode', 'includes'),
-        '\Includes\PluginAdmin\MetaBox\shortcode',
+        '\Includes\Admin\MetaBox\shortcode',
         'includes',
         'side',
         'low',

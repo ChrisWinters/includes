@@ -3,7 +3,7 @@
  * Private admin area function.
  */
 
-namespace Includes\PluginAdmin\Post;
+namespace Includes\Admin\Post;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -17,7 +17,7 @@ if (false === defined('ABSPATH')) {
 function delete(): string
 {
     // Required security check.
-    \Includes\PluginAdmin\securityCheck();
+    \Includes\Admin\securityCheck();
 
     // All plugin data should easily be removed.
     $status = 'deleted';

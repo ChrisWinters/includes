@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\View;
+namespace Includes\Admin\View;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function includeTemplates(): void
 {
-    $selectedTab = \Includes\PluginAdmin\queryString('tab');
+    $selectedTab = \Includes\Admin\queryString('tab');
     $currentTab = (true !== empty($selectedTab)) ? $selectedTab : 'settings';
     $templatePath = \Includes\settings('template_path');
 

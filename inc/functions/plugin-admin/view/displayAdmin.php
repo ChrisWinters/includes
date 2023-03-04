@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\View;
+namespace Includes\Admin\View;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -21,6 +21,6 @@ function displayAdmin(): void
         __('Settings', 'includes'),
         'manage_options',
         'includes',
-        '\Includes\PluginAdmin\View\includeTemplates'
+        '\Includes\Admin\View\includeTemplates'
     );
 }

@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin;
+namespace Includes\Admin;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -14,13 +14,13 @@ if (false === defined('ABSPATH')) {
  */
 function notices(): void
 {
-    $currentPage = \Includes\PluginAdmin\queryString('page');
+    $currentPage = \Includes\Admin\queryString('page');
 
     if ('includes' !== (string) $currentPage) {
         return;
     }
 
-    $status = \Includes\PluginAdmin\queryString('status');
+    $status = \Includes\Admin\queryString('status');
 
     if (true === empty($status)) {
         return;

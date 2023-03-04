@@ -3,7 +3,7 @@
  * Private admin area function.
  */
 
-namespace Includes\PluginAdmin\Post;
+namespace Includes\Admin\Post;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -19,7 +19,7 @@ if (false === defined('ABSPATH')) {
 function update(array $postObject): string
 {
     // Required security check.
-    \Includes\PluginAdmin\securityCheck();
+    \Includes\Admin\securityCheck();
 
     // Default to error if preset function is not found.
     $status = 'error';

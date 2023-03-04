@@ -3,7 +3,7 @@
  * Private admin area function.
  */
 
-namespace Includes\PluginAdmin\Post;
+namespace Includes\Admin\Post;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -15,24 +15,24 @@ if (false === defined('ABSPATH')) {
 function actions(): void
 {
     // Required security check.
-    \Includes\PluginAdmin\securityCheck();
+    \Includes\Admin\securityCheck();
 
     // Default to update failed.
     $status = 'error';
 
     // Filtered but not sanitized post object.
-    $postObject = \Includes\PluginAdmin\Post\object();
+    $postObject = \Includes\Admin\Post\object();
 
     // Update plugin settings based on selections.
     if ('update' === $postObject['action']) {
-        $status = \Includes\PluginAdmin\Post\update($postObject);
+        $status = \Includes\Admin\Post\update($postObject);
     }
 
     // Delete all plugin settings.
     if ('delete' === $postObject['action'] && 'delete' === $postObject['confirm']) {
-        $status = \Includes\PluginAdmin\Post\delete();
+        $status = \Includes\Admin\Post\delete();
     }
 
     // Redirect user back to plugin admin area.
-    \Includes\PluginAdmin\Post\redirect($status);
+    \Includes\Admin\Post\redirect($status);
 }

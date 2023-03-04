@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\PluginAdmin\View;
+namespace Includes\Admin\View;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function enqueueScripts(): void
 {
-    $currentPage = \Includes\PluginAdmin\queryString('page');
+    $currentPage = \Includes\Admin\queryString('page');
 
     // Only start loading within plugin admin areas.
     if (true === empty($currentPage)) {

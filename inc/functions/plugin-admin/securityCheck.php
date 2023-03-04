@@ -3,7 +3,7 @@
  * Private admin area function.
  */
 
-namespace Includes\PluginAdmin;
+namespace Includes\Admin;
 
 if (false === defined('ABSPATH')) {
     exit;

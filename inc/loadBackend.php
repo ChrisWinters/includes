@@ -21,37 +21,37 @@ function loadBackend(): void
     // Load plugin menu and admin area templates.
     \add_action(
         'admin_menu',
-        '\Includes\PluginAdmin\View\displayAdmin'
+        '\Includes\Admin\View\displayAdmin'
     );
 
     // Enqueue plugin admin area stylesheet.
     \add_action(
         'admin_enqueue_scripts',
-        '\Includes\PluginAdmin\View\enqueueScripts'
+        '\Includes\Admin\View\enqueueScripts'
     );
 
     // Update plugin settings.
     \add_action(
         'admin_post_update',
-        '\Includes\PluginAdmin\Post\actions'
+        '\Includes\Admin\Post\actions'
     );
 
     // Add MetaBoxes.
     \add_action(
         'add_meta_boxes',
-        'Includes\PluginAdmin\MetaBox\add'
+        'Includes\Admin\MetaBox\add'
     );
 
     // Save code MetaBox data.
     \add_action(
         'save_post_includes',
-        '\Includes\PluginAdmin\MetaBox\save',
+        '\Includes\Admin\MetaBox\save',
     );
 
     // Modify post type columns.
     \add_filter(
         'manage_includes_posts_columns',
-        '\Includes\PluginAdmin\PostType\modifyColumns',
+        '\Includes\Admin\PostType\modifyColumns',
         10,
         1
     );
@@ -59,7 +59,7 @@ function loadBackend(): void
     // Inject custom post type column content.
     \add_action(
         'manage_includes_posts_custom_column',
-        '\Includes\PluginAdmin\PostType\columnContent',
+        '\Includes\Admin\PostType\columnContent',
         10,
         2
     );
@@ -67,7 +67,7 @@ function loadBackend(): void
     // Inject shortcode form field on taxonomy terms.
     \add_action(
         'includes_edit_form_fields',
-        '\Includes\PluginAdmin\Taxonomy\formField',
+        '\Includes\Admin\Taxonomy\formField',
         10,
         1
     );
@@ -75,7 +75,7 @@ function loadBackend(): void
     // Plugin admin area notices.
     \add_action(
         'admin_notices',
-        '\Includes\PluginAdmin\notices'
+        '\Includes\Admin\notices'
     );
 
     // Flush rewrite rules.
