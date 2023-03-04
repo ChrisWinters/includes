@@ -24,6 +24,10 @@ function formField(object $termObject): void
         return;
     }
 
+    if (true !== (bool) \Includes\Option\setting('shortcode_terms')) {
+        return;
+    }
+
     $slugShortcode = htmlentities('[includes category="'.esc_attr($termObject->slug).'"]', ENT_QUOTES);
     $codeShortcode = htmlentities('[includes type="code" category="'.esc_attr($termObject->slug).'"]', ENT_QUOTES);
     $pluginDocsUrl = get_bloginfo('url').'/wp-admin/edit.php?post_type=includes&page=includes&tab=documents#atts';
