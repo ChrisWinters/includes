@@ -25,7 +25,7 @@ if (false === defined('ABSPATH')) {
 
 	<ul class="list-group p-0">
 		<li class="list-group-item mb-3">
-			<input class="form-check-input me-1" name="disable_viewer" type="checkbox" value="1" id="viewer"<?php checked((bool) 1, \Includes\Option\setting('disable_viewer')); ?>>
+			<input class="form-check-input me-1" name="shortcode_viewer" type="checkbox" value="1" id="viewer"<?php checked((bool) 1, \Includes\Option\setting('shortcode_viewer')); ?>>
 			<label class="form-check-label fw-bold" for="viewer">
 				<?php \esc_html_e('Enable shortcode viewer: Uses an empty template to view/test Includes', 'includes'); ?>
 				<span class="description"><?php \esc_html_e('Disable to use theme files (enabled by default)', 'includes'); ?></span>
@@ -33,7 +33,7 @@ if (false === defined('ABSPATH')) {
 		</li>
 
 		<li class="list-group-item mb-3">
-			<input class="form-check-input me-1" name="shortcode_post_type" type="checkbox" value="1" id="post_type"<?php checked((bool) 1, \Includes\Option\setting('shortcode_post_type')); ?>>
+			<input class="form-check-input me-1" name="shortcode_fields" type="checkbox" value="1" id="post_type"<?php checked((bool) 1, \Includes\Option\setting('shortcode_fields')); ?>>
 			<label class="form-check-label fw-bold" for="post_type">
 				<?php \esc_html_e('Enable includes shortcode field(s) on Includes post type view', 'includes'); ?>
 				<span class="description"><?php \esc_html_e('Helpful for all users (enabled by default)', 'includes'); ?></span>
