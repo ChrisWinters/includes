@@ -55,8 +55,14 @@ input[type=radio]:checked::before {
         @extend h4;
         padding-left: 0;
     }
+
     h3 {
         @extend h5;
+    }
+
+    .description {
+        display: block;
+        font-weight: normal;
     }
 }
 
