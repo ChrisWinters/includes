@@ -29,17 +29,17 @@ function initPlugin(): void
         \Includes\Args\taxonomy()
     );
 
-    // Legacy shortcode: [code]
-    \add_shortcode(
-        'includes',
-        '\Includes\Shortcode\code'
-    );
-
-    // Shortcode: [includes]
-    // Shortcode: [includes code=true]
+    // Shortcode: [includes slug=""]
+    // Shortcode: [includes code slug=""]
     \add_shortcode(
         'includes',
         '\Includes\Shortcode\includes'
+    );
+
+    // Legacy shortcode: [code]
+    \add_shortcode(
+        'code',
+        '\Includes\Shortcode\code'
     );
 
     // Inject viewer into template include path.
