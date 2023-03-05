@@ -18,7 +18,7 @@ if (false === defined('ABSPATH')) {
 function columnContent(string $column, int $post_id): void
 {
     // Disable if viewing post trash.
-    if ('trash' === (string) \Includes\Admin\queryString('post_status')) {
+    if ('trash' === (string) \Includes\queryString('post_status')) {
         return;
     }
 

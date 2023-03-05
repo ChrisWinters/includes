@@ -16,7 +16,7 @@ if (false === defined('ABSPATH')) {
  */
 function formField(object $termObject): void
 {
-    if ('includes' !== \Includes\Admin\queryString('taxonomy')) {
+    if ('includes' !== \Includes\queryString('taxonomy')) {
         return;
     }
 

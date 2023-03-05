@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function includeTemplates(): void
 {
-    $selectedTab = \Includes\Admin\queryString('tab');
+    $selectedTab = \Includes\queryString('tab');
     $currentTab = (true !== empty($selectedTab)) ? $selectedTab : 'settings';
     $templatePath = \Includes\settings('template_path');
 

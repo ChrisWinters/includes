@@ -14,13 +14,13 @@ if (false === defined('ABSPATH')) {
  */
 function notices(): void
 {
-    $currentPage = \Includes\Admin\queryString('page');
+    $currentPage = \Includes\queryString('page');
 
     if ('includes' !== (string) $currentPage) {
         return;
     }
 
-    $status = \Includes\Admin\queryString('status');
+    $status = \Includes\queryString('status');
 
     if (true === empty($status)) {
         return;

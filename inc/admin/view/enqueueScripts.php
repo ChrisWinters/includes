@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function enqueueScripts(): void
 {
-    $currentPage = \Includes\Admin\queryString('page');
+    $currentPage = \Includes\queryString('page');
 
     // Only start loading within plugin admin areas.
     if (true === empty($currentPage) || 'includes' !== $currentPage) {

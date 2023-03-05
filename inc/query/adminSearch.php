@@ -17,7 +17,7 @@ if (false === defined('ABSPATH')) {
 function adminSearch(\WP_Query $query): object
 {
     // Only within includes post type admin pages.
-    if ('includes' !== \Includes\Admin\queryString('post_type')) {
+    if ('includes' !== \Includes\queryString('post_type')) {
         return $query;
     }
 

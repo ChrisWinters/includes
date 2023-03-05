@@ -47,7 +47,7 @@ function columnCategory(int $post_id): void
             $comma = '';
         }
 
-        if ('trash' === (string) \Includes\Admin\queryString('post_status')) {
+        if ('trash' === (string) \Includes\queryString('post_status')) {
             $html .= \esc_html($category->name).$comma;
         } else {
             $html .= '<a href="edit.php?post_type=includes&taxonomy=includes'.
