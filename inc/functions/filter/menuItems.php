@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function menuItems(): void
 {
-    if ('1' === \Includes\Option\setting('shortcode_menus')) {
+    if (1 === (bool) \Includes\Option\setting('shortcode_menus')) {
         if (false === \has_filter('wp_nav_menu_items', 'do_shortcode')) {
             \add_filter('wp_nav_menu_items', 'do_shortcode');
         }

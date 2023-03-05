@@ -14,9 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function widgetText(): void
 {
-    if ('1' === \Includes\Option\setting('shortcode_widgets')) {
-        if (false === \has_filter('widget_text', 'do_shortcode')) {
-            \add_filter('widget_text', 'do_shortcode');
-        }
+    if (1 === (bool) \Includes\Option\setting('shortcode_widgets')) {
+        \add_filter('widget_text', 'do_shortcode', 11);
     }
 }

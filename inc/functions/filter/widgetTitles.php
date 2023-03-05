@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function widgetTitles(): void
 {
-    if ('1' === \Includes\Option\setting('shortcode_widget_titles')) {
+    if (1 === (bool) \Includes\Option\setting('shortcode_widget_titles')) {
         if (false === \has_filter('widget_title', 'do_shortcode')) {
             \add_filter('widget_title', 'do_shortcode');
         }
