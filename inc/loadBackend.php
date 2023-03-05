@@ -78,6 +78,12 @@ function loadBackend(): void
         '\Includes\Admin\notices'
     );
 
+    // Corrects search query for includes post type.
+    \add_action(
+        'pre_get_posts',
+        '\Includes\Query\adminSearch'
+    );
+
     // Flush rewrite rules.
     \register_activation_hook(
         INCLUDES_FILE,
