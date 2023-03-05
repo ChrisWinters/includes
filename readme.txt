@@ -1,6 +1,6 @@
 === Includes for WordPress ===
 Plugin Name: Includes
-Contributors: Chris W.
+Contributors: Chris Winters
 Requires at least: 4.6
 Requires PHP: 5.6
 Tested up to: 5.4
