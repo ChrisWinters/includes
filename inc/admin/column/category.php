@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\Admin\Columns;
+namespace Includes\Admin\Column;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  *
  * @param int $post_id The includes post id.
  */
-function columnCategory(int $post_id): void
+function category(int $post_id): void
 {
     $categories = \get_the_terms((int) $post_id, 'includes');
 

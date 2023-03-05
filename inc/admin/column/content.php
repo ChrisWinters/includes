@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\Admin\Columns;
+namespace Includes\Admin\Column;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -15,7 +15,7 @@ if (false === defined('ABSPATH')) {
  * @param string $column  The column slug to target.
  * @param int    $post_id The current post id.
  */
-function columnContent(string $column, int $post_id): void
+function content(string $column, int $post_id): void
 {
     // Disable if viewing post trash.
     if ('trash' === (string) \Includes\queryString('post_status')) {
@@ -24,7 +24,7 @@ function columnContent(string $column, int $post_id): void
 
     // Show selected categories content.
     if ('category' === $column) {
-        \Includes\Admin\Columns\columnCategory($post_id);
+        \Includes\Admin\Column\category($post_id);
     }
 
     // Display shortcode input(s).
@@ -35,6 +35,6 @@ function columnContent(string $column, int $post_id): void
     ) {
         global $post;
 
-        \Includes\Admin\Columns\columnShortcode($post_id, $post->post_name);
+        \Includes\Admin\Column\shortcodes($post_id, $post->post_name);
     }
 }

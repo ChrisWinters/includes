@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\Admin\Columns;
+namespace Includes\Admin\Column;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -14,7 +14,7 @@ if (false === defined('ABSPATH')) {
  *
  * @param array $columns An associative array of column headings.
  */
-function modifyColumns(array $columns): array
+function modify(array $columns): array
 {
     // Disable if viewing post trash.
     if ('trash' === (string) \Includes\queryString('post_status')) {

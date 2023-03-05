@@ -3,7 +3,7 @@
  * Public admin area function.
  */
 
-namespace Includes\Admin\Columns;
+namespace Includes\Admin\Column;
 
 if (false === defined('ABSPATH')) {
     exit;
@@ -15,7 +15,7 @@ if (false === defined('ABSPATH')) {
  * @param int    $post_id   The includes post id.
  * @param string $post_slug The includes post slug.
  */
-function columnShortcode(int $post_id, string $post_slug): void
+function shortcodes(int $post_id, string $post_slug): void
 {
     $permalink = \get_post_permalink($post_id);
     $dashIcon = '<span class="dashicons dashicons-visibility" style="margin-top:4px;"></span>';
