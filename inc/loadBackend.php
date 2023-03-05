@@ -51,7 +51,7 @@ function loadBackend(): void
     // Modify post type columns.
     \add_filter(
         'manage_includes_posts_columns',
-        '\Includes\Admin\PostType\modifyColumns',
+        '\Includes\Admin\Columns\modifyColumns',
         10,
         1
     );
@@ -59,7 +59,7 @@ function loadBackend(): void
     // Inject custom post type column content.
     \add_action(
         'manage_includes_posts_custom_column',
-        '\Includes\Admin\PostType\columnContent',
+        '\Includes\Admin\Columns\columnContent',
         10,
         2
     );
