@@ -72,6 +72,12 @@ function loadBackend(): void
         1
     );
 
+    // Display any shortcode within a registered sidebar.
+    \add_action(
+        'widgets_init',
+        '\Includes\Widget\register'
+    );
+
     // Plugin admin area notices.
     \add_action(
         'admin_notices',
