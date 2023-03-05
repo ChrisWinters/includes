@@ -71,6 +71,8 @@ function settings(string $key): string|array
             '/functions/admin/view/enqueueScripts.php',
             '/functions/admin/view/includeTemplates.php',
             '/functions/query/results.php',
+            '/functions/query/adminSearch.php',
+            '/functions/query/siteSearch.php',
             '/functions/query/args/category.php',
             '/functions/query/args/order.php',
             '/functions/query/args/orderby.php',
