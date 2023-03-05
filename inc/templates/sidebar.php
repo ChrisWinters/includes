@@ -24,11 +24,14 @@ if (false === defined('ABSPATH')) {
 </aside>
 
 <aside class="postbox">
-	<h3><?php \esc_html_e('Includes Help', 'includes'); ?></h3>
+	<h3><?php \esc_html_e('Documentation', 'includes'); ?></h3>
 	<div class="inside" style="clear:both;padding-top:1px;">
 		<div class="para">
 			<ul class="list-group list-group-flush p-0">
-				<li class="list-group-item"><a href="#" target="_blank"><?php \esc_html_e('Pending...', 'includes'); ?></a></li>
+				<li class="list-group-item"><a href="https://github.com/ChrisWinters/includes/wiki/1-Shortcode-and-attributes" target="_blank"><?php \esc_html_e('Shortcode and attributes', 'includes'); ?></a></li>
+				<li class="list-group-item"><a href="https://github.com/ChrisWinters/includes/wiki/2-Plugin-settings" target="_blank"><?php \esc_html_e('Plugin settings', 'includes'); ?></a></li>
+				<li class="list-group-item"><a href="https://github.com/ChrisWinters/includes/wiki/3-Usage-examples" target="_blank"><?php \esc_html_e('Usage examples', 'includes'); ?></a></li>
+				<li class="list-group-item"><a href="https://github.com/ChrisWinters/includes/wiki/4-Preview-template" target="_blank"><?php \esc_html_e('Preview template', 'includes'); ?></a></li>
 			</ul>
 		</div>
 	</div>
