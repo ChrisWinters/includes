@@ -30,7 +30,7 @@ function shortcode(object $post): void
     // Display code shortcode.
     if ((bool) 1 === \Includes\Option\setting('shortcode_code')) {
         $codeView = ('publish' === $post->post_status) ? '?type=code' : '&type=code';
-        $codeShortcode = htmlentities('[includes code="'.$post->post_name.'"]', ENT_QUOTES);
+        $codeShortcode = htmlentities('[includes code slug="'.$post->post_name.'"]', ENT_QUOTES);
 
         echo '<p><a href="'.$permalink.$codeView.'" target="_blank" style="text-decoration:none;">'.$dashIcon.'</a> <input type="text" name="shortcode" value="'.$codeShortcode.'" size="24" autocomplete="off" onclick="this.focus();this.select()" /></p>';
     }
