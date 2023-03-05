@@ -50,4 +50,10 @@ function initPlugin(): void
     \Includes\Filter\postTitles();
     \Includes\Filter\widgetText();
     \Includes\Filter\widgetTitles();
+
+    // Remove includes post type from frontend search query.
+    \add_action(
+        'pre_get_posts',
+        '\Includes\Query\siteSearch'
+    );
 }
