@@ -3,7 +3,7 @@
  * Global function.
  */
 
-namespace Includes\Args;
+namespace Includes;
 
 if (false === defined('ABSPATH')) {
     exit;
