@@ -14,18 +14,22 @@ if (false === defined('ABSPATH')) {
  *
  * @param object The WP_Query instance (passed by reference).
  */
-function adminSearch(\WP_Query $query)
+function adminSearch(\WP_Query $query): object
 {
     // Only within includes post type admin pages.
     if ('includes' !== \Includes\Admin\queryString('post_type')) {
         return $query;
     }
 
+    // Get search query.
+    $search = filter_input(
+        INPUT_GET,
+        's',
+        FILTER_UNSAFE_RAW
+    );
+
     // Empty search, redirect to Includes listing.
-    if (
-        true !== empty(\Includes\Admin\queryString('post_status')) &&
-        true === empty(\Includes\Admin\queryString('s'))
-    ) {
+    if (true === isset($search) && true === empty($search)) {
         \wp_redirect(
             \admin_url(
                 'edit.php?post_type=includes'
