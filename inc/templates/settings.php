@@ -28,7 +28,7 @@ if (false === defined('ABSPATH')) {
 			<input class="form-check-input me-1" name="shortcode_viewer" type="checkbox" value="1" id="viewer"<?php checked((bool) 1, \Includes\Option\setting('shortcode_viewer')); ?>>
 			<label class="form-check-label fw-bold" for="viewer">
 				<?php \esc_html_e('Enable shortcode viewer: Uses an empty template to view/test Includes', 'includes'); ?>
-				<span class="description"><?php \esc_html_e('Disable to use theme files (enabled by default)', 'includes'); ?></span>
+				<span class="description"><?php \esc_html_e('Disable to use theme files', 'includes'); ?></span>
 			</label>
 		</li>
 
@@ -36,7 +36,7 @@ if (false === defined('ABSPATH')) {
 			<input class="form-check-input me-1" name="shortcode_fields" type="checkbox" value="1" id="post_type"<?php checked((bool) 1, \Includes\Option\setting('shortcode_fields')); ?>>
 			<label class="form-check-label fw-bold" for="post_type">
 				<?php \esc_html_e('Enable includes shortcode field(s) on Includes post type view', 'includes'); ?>
-				<span class="description"><?php \esc_html_e('Helpful for all users (enabled by default)', 'includes'); ?></span>
+				<span class="description"><?php \esc_html_e('Helpful for all users', 'includes'); ?></span>
 			</label>
 		</li>
 
@@ -44,15 +44,7 @@ if (false === defined('ABSPATH')) {
 			<input class="form-check-input me-1" name="shortcode_terms" type="checkbox" value="1" id="terms"<?php checked((bool) 1, \Includes\Option\setting('shortcode_terms')); ?>>
 			<label class="form-check-label fw-bold" for="terms">
 				<?php \esc_html_e('Enable includes shortcode field(s) on category term pages', 'includes'); ?>
-				<span class="description"><?php \esc_html_e('Helpful if you use categories (enabled by default)', 'includes'); ?></span>
-			</label>
-		</li>
-
-		<li class="list-group-item my-3">
-			<input class="form-check-input me-1" name="shortcode_code" type="checkbox" value="1" id="shortcode"<?php checked((bool) 1, \Includes\Option\setting('shortcode_code')); ?>>
-			<label class="form-check-label fw-bold" for="shortcode">
-				<?php \esc_html_e('Enable code editor and allow the Includes shortcode to render saved code', 'includes'); ?>
-				<span class="description"><?php \esc_html_e('Only use if needed (disabled by default)', 'includes'); ?></span>
+				<span class="description"><?php \esc_html_e('Helpful if you use categories', 'includes'); ?></span>
 			</label>
 		</li>
 
@@ -61,6 +53,14 @@ if (false === defined('ABSPATH')) {
 			<label class="form-check-label fw-bold" for="widget">
 				<?php \esc_html_e('Enable shortcode widget - a custom widget that renders shortcodes', 'includes'); ?>
 				<span class="description"><?php \esc_html_e('Add shortcode(s) to classic widgets. Renders shortcode content in block widgets.', 'includes'); ?></span>
+			</label>
+		</li>
+
+		<li class="list-group-item my-3">
+			<input class="form-check-input me-1" name="shortcode_code" type="checkbox" value="1" id="shortcode"<?php checked((bool) 1, \Includes\Option\setting('shortcode_code')); ?>>
+			<label class="form-check-label fw-bold" for="shortcode">
+				<?php \esc_html_e('Enable code editor and allow the Includes shortcode to render saved code', 'includes'); ?>
+				<span class="description"><?php \esc_html_e('Only use if needed - disabled by default', 'includes'); ?></span>
 			</label>
 		</li>
 	</ul>
