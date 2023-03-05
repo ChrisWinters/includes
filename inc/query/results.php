@@ -27,7 +27,7 @@ function results(array $queryArgs, bool $code = false): string
 
             if (true === $code) {
                 // Get includes code content.
-                $content = \get_post_meta($query->posts[0]->ID, 'includes-code', true);
+                $content = \get_post_meta($query->posts[0]->ID, 'includes_code', true);
 
                 if (true === empty($content)) {
                     return '';
