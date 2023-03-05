@@ -17,12 +17,7 @@ function enqueueScripts(): void
     $currentPage = \Includes\Admin\queryString('page');
 
     // Only start loading within plugin admin areas.
-    if (true === empty($currentPage)) {
-        return;
-    }
-
-    // Only load within this plugins admin area.
-    if ('includes' !== $currentPage) {
+    if (true === empty($currentPage) || 'includes' !== $currentPage) {
         return;
     }
 
