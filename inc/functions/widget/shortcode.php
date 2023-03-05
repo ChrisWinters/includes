@@ -10,7 +10,7 @@ if (false === defined('ABSPATH')) {
 }
 
 /**
- * Display any shortcode within a registered sidebar.
+ * Custom widget to render shortcodes widget areas.
  */
 class shortcode extends \WP_Widget
 {
