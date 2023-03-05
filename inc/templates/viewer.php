@@ -28,6 +28,9 @@ $postID = \get_the_ID();
 </head>
 <body <?php \body_class('includes'); ?>>
 <?php
+// Plugin hook before Include content.
+do_action('includes_before_posttype_content');
+
 if ('code' === filter_input(INPUT_GET, 'type')) {
     $content = \get_post_meta($postID, 'includes_code', true);
 
@@ -47,6 +50,9 @@ if ('code' === filter_input(INPUT_GET, 'type')) {
 
     echo \wp_kses_post($content);
 }
+
+// Plugin hook after Include content.
+do_action('includes_after_posttype_content');
 
 \wp_footer();
 ?>
