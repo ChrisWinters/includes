@@ -32,6 +32,7 @@ function settings(string $key): string|array
             'shortcode_code' => FILTER_VALIDATE_BOOL,
             'shortcode_terms' => FILTER_VALIDATE_BOOL,
             'shortcode_posts_pages' => FILTER_VALIDATE_BOOL,
+            'shortcode_widget' => FILTER_VALIDATE_BOOL,
             'shortcode_post_titles' => FILTER_VALIDATE_BOOL,
             'shortcode_menus' => FILTER_VALIDATE_BOOL,
             'shortcode_widget_titles' => FILTER_VALIDATE_BOOL,
@@ -82,6 +83,8 @@ function settings(string $key): string|array
             '/functions/register/activation.php',
             '/functions/shortcode/code.php',
             '/functions/shortcode/includes.php',
+            '/functions/widget/register.php',
+            '/functions/widget/shortcode.php',
         ],
     ];
 
