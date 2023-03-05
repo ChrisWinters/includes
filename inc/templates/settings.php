@@ -55,6 +55,14 @@ if (false === defined('ABSPATH')) {
 				<span class="description"><?php \esc_html_e('Only use if needed (disabled by default)', 'includes'); ?></span>
 			</label>
 		</li>
+
+		<li class="list-group-item my-3">
+			<input class="form-check-input me-1" name="shortcode_widget" type="checkbox" value="1" id="widget"<?php checked((bool) 1, \Includes\Option\setting('shortcode_widget')); ?>>
+			<label class="form-check-label fw-bold" for="widget">
+				<?php \esc_html_e('Enable shortcode widget - a custom widget that renders shortcodes', 'includes'); ?>
+				<span class="description"><?php \esc_html_e('Add shortcode(s) to classic widgets. Renders shortcode content in block widgets.', 'includes'); ?></span>
+			</label>
+		</li>
 	</ul>
 
 	<h3><?php \esc_html_e('Enhance WordPress features', 'includes'); ?></h3>
