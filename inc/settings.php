@@ -40,6 +40,7 @@ function settings(string $key): string|array
         'files' => [
             '/loadBackend.php',
             '/initPlugin.php',
+            '/queryString.php',
             '/args/postType.php',
             '/args/taxonomy.php',
             '/option/delete.php',
@@ -52,7 +53,6 @@ function settings(string $key): string|array
             '/filter/widgetText.php',
             '/filter/widgetTitles.php',
             '/admin/notices.php',
-            '/admin/queryString.php',
             '/admin/securityCheck.php',
             '/admin/metabox/add.php',
             '/admin/metabox/editor.php',
