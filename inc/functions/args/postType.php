@@ -24,7 +24,7 @@ function postType(): array
         'show_in_admin_bar' => false,
         'map_meta_cap' => true,
         'query_var' => true,
-        'show_in_rest' => false,
+        'show_in_rest' => true,
         'rest_base' => false,
         'has_archive' => false,
         'hierarchical' => true,
