@@ -16,12 +16,5 @@ if (false === defined('ABSPATH')) {
  */
 function code(array $atts = []): string
 {
-    return \Includes\Shortcode\includes(
-        array_merge(
-            $atts,
-            [
-                'code' => true,
-            ]
-        )
-    );
+    return \Includes\Shortcode\includes($atts);
 }
