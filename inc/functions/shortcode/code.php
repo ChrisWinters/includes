@@ -14,9 +14,9 @@ if (false === defined('ABSPATH')) {
  *
  * @param array $atts Shortcode attributes.
  */
-function code(array $atts = []): void
+function code(array $atts = []): string
 {
-    \Includes\Shortcode\includes(
+    return \Includes\Shortcode\includes(
         array_merge(
             $atts,
             [
