@@ -17,7 +17,7 @@ function initPlugin(): void
     // Register includes post type.
     \register_post_type(
         'includes',
-        \Includes\Args\postType()
+        \Includes\posttypeArgs()
     );
 
     // Register includes taxonomy.
@@ -26,7 +26,7 @@ function initPlugin(): void
         [
             'includes',
         ],
-        \Includes\Args\taxonomy()
+        \Includes\taxonomyArgs()
     );
 
     // Shortcode: [includes slug=""]
