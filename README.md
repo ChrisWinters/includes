@@ -1,6 +1,6 @@
 # WordPress Plugin - Includes for WordPress
 
-Include Content Anywhere!
+## Include Content Anywhere
 
 Includes is a unique custom post type that can be accessed with a shortcode. Publish custom "Includes" posts directly into widgets, widget titles, menu items, posts, pages, custom post types (yes, WooCommerce too), and even theme templates. Centralize the management of text widgets, locally hosted advertisements, rotate content, schedule updates, and all repeated content blocks within posts/pages. Easily update duplicated content like email opt-in forms, author bio's, realtor requirements, shop guarantees, and much more - all from a single location!
 
