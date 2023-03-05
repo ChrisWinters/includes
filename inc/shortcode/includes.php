@@ -18,8 +18,8 @@ function includes(array $atts = []): string
 {
     // Defaults to the_content over code post meta.
     $codeStatus = (
-        true === isset($atts['code']) &&
-        true === (bool) $atts['code']
+        true === isset($atts[0]) &&
+        'code' === (string) $atts[0]
     ) ? true : false;
 
     // Single includes query.
