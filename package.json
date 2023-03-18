@@ -25,7 +25,7 @@
     },
     "devDependencies": {
         "archiver": "^5.3.1",
-        "autoprefixer": "^10.4.13",
+        "autoprefixer": "^10.4.14",
         "bootstrap": "^5.2.3",
         "clean-css-cli": "^5.6.2",
         "copyfiles": "^2.4.1",
@@ -36,7 +36,7 @@
         "postcss": "^8.4.21",
         "postcss-cli": "^10.1.0",
         "replace-in-file": "^6.3.5",
-        "sass": "^1.58.3",
+        "sass": "^1.59.3",
         "wp-pot-cli": "^1.5.0"
     }
 }
