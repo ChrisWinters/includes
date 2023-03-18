@@ -45,6 +45,9 @@ function object(): array
     unset($postObject['_wp_http_referer']);
     unset($postObject['includes_nonce']);
 
+    // Keep plugin activation from overriding settings with defaults.
+    $postObject['activated'] = 1;
+
     // The post object should at least have an action.
     if (true === empty($postObject)) {
         return [];
