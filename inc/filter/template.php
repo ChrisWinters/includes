@@ -14,13 +14,7 @@ if (false === defined('ABSPATH')) {
  */
 function template(): void
 {
-    // Frontend only.
-    if (true === \is_admin()) {
-        return;
-    }
-
     // Only load if the requested URI is the includes post type.
-    // Cannot check for post type yet, but may need to disable feature.
     if (
         true === isset($_SERVER['REQUEST_URI']) &&
         false === str_contains($_SERVER['REQUEST_URI'], 'includes')
@@ -28,7 +22,7 @@ function template(): void
         return;
     }
 
-    // Plugin setting: True uses theme templates to view shortcode content.
+    // Plugin setting: True uses theme templates to view Includes content.
     if (true !== (bool) \Includes\Option\setting('shortcode_viewer')) {
         return;
     }
@@ -43,7 +37,14 @@ function template(): void
     // Filters the path of the current template before including it.
     \add_filter(
         'template_include',
-        function (): string {
+        function ($template): string {
+            // Force theme to throw 404 if query is bad.
+            if (true === str_contains($template, '404')) {
+                header('HTTP/1.0 404 Not Found');
+
+                return $template;
+            }
+
             return \Includes\settings('template_path').'/viewer.php';
         },
         99
