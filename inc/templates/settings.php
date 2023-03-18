@@ -10,6 +10,8 @@ namespace Includes;
 if (false === defined('ABSPATH')) {
     exit;
 }
+
+$menuPosition = \Includes\Option\setting('menu_position');
 ?>
 <section>
 <form enctype="multipart/form-data" method="post" action="<?php echo admin_url('admin-post.php'); ?>">
@@ -63,9 +65,28 @@ if (false === defined('ABSPATH')) {
 				<span class="description"><?php \esc_html_e('Only use if needed - disabled by default', 'includes'); ?></span>
 			</label>
 		</li>
+
+		<li class="list-group-item my-3">
+			<label class="form-check-label fw-bold" for="menu_position">
+				<?php \esc_html_e('Includes menu position', 'includes'); ?><br />
+				<select name="menu_position" id="menu_position" class="form-select mt-1" aria-label="<?php \esc_html_e('Select a custom menu position', 'includes'); ?>">
+					<option selected><?php \esc_html_e('Menu positions', 'includes'); ?></option>
+					<option value="1" <?php selected($menuPosition, 1); ?>><?php \esc_html_e('Above Dashboard', 'includes'); ?></option>
+					<option value="2" <?php selected($menuPosition, 2); ?>><?php \esc_html_e('Below Dashboard', 'includes'); ?></option>
+					<option value="5" <?php selected($menuPosition, 5); ?>><?php \esc_html_e('Below Posts', 'includes'); ?></option>
+					<option value="10" <?php selected($menuPosition, 10); ?>><?php \esc_html_e('Below Media', 'includes'); ?></option>
+					<option value="20" <?php selected($menuPosition, 20); ?>><?php \esc_html_e('Below Pages', 'includes'); ?></option>
+					<option value="25" <?php selected($menuPosition, 25); ?>><?php \esc_html_e('Below comments', 'includes'); ?></option>
+					<option value="65" <?php selected($menuPosition, 65); ?>><?php \esc_html_e('Below Plugins', 'includes'); ?></option>
+					<option value="70" <?php selected($menuPosition, 70); ?>><?php \esc_html_e('Below Users', 'includes'); ?></option>
+					<option value="75" <?php selected($menuPosition, 75); ?>><?php \esc_html_e('Below Tools', 'includes'); ?></option>
+					<option value="80" <?php selected($menuPosition, 80); ?>><?php \esc_html_e('Below Settings', 'includes'); ?></option>
+				</select>
+			</label>
+		</li>
 	</ul>
 
-	<h3><?php \esc_html_e('Enhance WordPress features', 'includes'); ?></h3>
+	<h3 class="mt-4"><?php \esc_html_e('Enhance WordPress features', 'includes'); ?></h3>
 	<hr />
 
 	<ul class="list-group p-0">
@@ -105,3 +126,21 @@ if (false === defined('ABSPATH')) {
 	<p class="submit"><input type="submit" name="submit" id="submit" class="btn btn-primary" value="<?php \esc_html_e('save settings', 'includes'); ?>"></p>
 </form>
 </section>
+
+<?php
+    if (true !== empty(\Includes\queryString('all'))) {
+        $allSettings = \Includes\Option\all();
+        $countSettings = (true !== empty($allSettings)) ? (int) count($allSettings) + 4 : 0;
+        ?>
+<section class="mt-5">
+	<h3><?php \esc_html_e('All saved plugin settings', 'includes'); ?></h3>
+	<hr />
+
+	<div class="form-group">
+		<textarea class="form-control form-control-sm" rows="<?php echo $countSettings; ?>"><?php if (true !== empty($allSettings)) {
+		    print_r($allSettings);
+		}?></textarea>
+	</div>
+</section>
+<?php
+    }
