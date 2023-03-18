@@ -4,3 +4,4 @@ package-lock.json export-ignore
 package.json export-ignore
 assets/psds export-ignore
 assets/images/screenshots export-ignore
+includes.zip export-ignore
