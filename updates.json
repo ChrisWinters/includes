@@ -1,12 +1,12 @@
 {
-	"name" : "Includes",
-	"version" : "4.1.1",
+	"name": "Includes",
+	"version": "4.1.1",
 	"download_url": "https://github.com/ChrisWinters/includes/raw/master/includes.zip",
 	"homepage": "https://github.com/ChrisWinters/includes/",
 	"required_php": "7.2",
 	"required_wp": "4.9",
 	"tested_wp": "6.1.1",
-	"last_updated": "2023-02-24 16:24:12",
+	"last_updated": "2023-03-18 13:29:12",
 	"upgrade_notice": "An update is available.",
 	"author": "Chris W.",
 	"author_homepage": "https://github.com/ChrisWinters/",
@@ -14,9 +14,9 @@
 		"description": "Includes for WordPress - Include Content Anywhere",
 		"installation": "Manually download, install, and activate the plugin. Once activated the Includes plugin will update just like other WordPress plugin."
 	},
-	"icons" : {
-		"1x" : "https://raw.githubusercontent.com/ChrisWinters/includes/master/assets/images/80x80.jpg",
-		"2x" : "https://raw.githubusercontent.com/ChrisWinters/includes/master/assets/images/80x80.jpg"
+	"icons": {
+		"1x": "https://raw.githubusercontent.com/ChrisWinters/includes/master/assets/images/80x80.jpg",
+		"2x": "https://raw.githubusercontent.com/ChrisWinters/includes/master/assets/images/80x80.jpg"
     },
 	"banners": {
 		"low": "https://raw.githubusercontent.com/ChrisWinters/includes/master/assets/images/590x300.jpg",
