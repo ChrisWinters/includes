@@ -47,3 +47,21 @@ function requiredFiles(): void
     'init',
     '\Includes\initPlugin'
 );
+
+// Maybe add default settings & flush rewrite rules.
+\register_activation_hook(
+    INCLUDES_FILE,
+    '\Includes\Register\activation'
+);
+
+// Garbage cleanup & flush rewrite rules.
+\register_deactivation_hook(
+    INCLUDES_FILE,
+    '\Includes\Register\deactivation'
+);
+
+// Uninstall plugin.
+\register_uninstall_hook(
+    INCLUDES_FILE,
+    '\Includes\Register\uninstall'
+);
