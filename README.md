@@ -4,7 +4,7 @@ Includes is a unique custom post type that can be accessed with a shortcode. Pub
 
   ![Includes for WordPress - Include Content Anywhere!](https://raw.githubusercontent.com/ChrisWinters/includes/master/assets/images/590x300.jpg)
 
-**Current version:** 4.0.1 | **Requires PHP:** 7.2 | **WordPress version:** 6.1.1
+**Current version:** 5.0.0 | **Requires PHP:** 7.2 | **WordPress version:** 6.1.1
 
 ## Plugin features
 
@@ -26,27 +26,15 @@ Includes is a unique custom post type that can be accessed with a shortcode. Pub
 * Rotate content (links, ads, etc) within an Includes category, keeping things fresh for the user
 * Organize duplicate post content (opt-ins, ads, bios, etc) into a single easy to manage location
 * Add styling or scripting to any Include to further customize dynamic content
+* [More usage examples](https://github.com/ChrisWinters/includes/wiki/3)-Usage-examples)
 
-## Install and activate
+## Documentation
 
-[Download](https://github.com/ChrisWinters/includes/raw/master/includes.zip), install, and activate the plugin. Once activated the Includes plugin will update just like other WordPress plugin.
-
-### Do it yourself
-
-A little extra work, but handy when you need to use a past versions or just like to use releases.
-
-* Download the [latest release](https://github.com/ChrisWinters/includes/releases)
-  * On your personal computer, unzip file: includes-x.x.x.zip then open the directory: includes-x.x.x
-  * Select the directory: includes-x.x.x and rename to includes
-  * Reselect the includes directory and compress to a zip archive
-
-#### Really do it yourself
-
-Integrate and deploy the plugin however you like.
-
-* Clone the plugin and have fun
-* Run npm install for basic development needs
-  * Check the package.json for commands
+* [Download, install, and activate](https://github.com/ChrisWinters/includes/wiki)
+* [Shortcode and attributes](https://github.com/ChrisWinters/includes/wiki/1)-Shortcode-and-attributes)
+* [Plugin settings overview](https://github.com/ChrisWinters/includes/wiki/2)-Plugin-settings)
+* [Shortcode usage examples](https://github.com/ChrisWinters/includes/wiki/3)-Usage-examples)
+* [Previewing the shortcode](https://github.com/ChrisWinters/includes/wiki/4)-Preview-template)
 
 ## Issue and feature requests
 
@@ -64,7 +52,7 @@ Permissions of this strong copyleft license are conditioned on making available 
 
 ## Disclaimer
 
-Includes ("Includes", "Includes plugin") a plugin for WordPress installs; is provided by Chris Winters the ("author") "as is" and "with all faults. The author makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components realted to the Includes plugin. There are inherent dangers in the use of any software, and you are solely responsible for determining whether the Includes plugin is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and the author will not be liable for any damages you may suffer in connection with using, modifying, or distributing the Includes plugin.
+Includes ("the Includes plugin") is provided by Chris Winters the ("author") "as is" and "with all faults." The author makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components related to the Includes plugin. There are inherent dangers in the use of any software, and you are solely responsible for determining whether the Includes plugin is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and the author will not be liable for any damages you may suffer in connection with using, modifying, or distributing the Includes plugin.
 
 The information provided by the author" of the Includes plugin is for general informational purposes only. All information related to the Includes plugin is provided in good faith, however the author makes no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of provided information.
 

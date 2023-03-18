@@ -4,9 +4,9 @@
  * Plugin Name: Includes
  * Plugin URI: https://github.com/ChrisWinters/includes
  * Description: Includes for WordPress - Include Content Anywhere!
- * Version: 4.1.1
+ * Version: 5.0.0
  * License: GNU GPLv3
- * Author: Chris Winters
+ * Author: Chris W.
  * Text Domain: includes
  * Author URI: https://github.com/ChrisWinters
  * Copyright ( c ) 2014-2023 Chris Winters.
