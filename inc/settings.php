@@ -27,6 +27,7 @@ function settings(string $key): string|array
         'version_message' => \__('WordPress 3.8 is required! Upgrade WordPress and try again.', 'includes'),
         'template_path' => dirname(INCLUDES_FILE).'\inc\templates',
         'allowed_inputs' => [
+            'menu_position' => FILTER_VALIDATE_INT,
             'shortcode_viewer' => FILTER_VALIDATE_BOOL,
             'shortcode_fields' => FILTER_VALIDATE_BOOL,
             'shortcode_code' => FILTER_VALIDATE_BOOL,
@@ -43,6 +44,7 @@ function settings(string $key): string|array
             '/posttype.php',
             '/queryString.php',
             '/taxonomy.php',
+            '/option/all.php',
             '/option/delete.php',
             '/option/get.php',
             '/option/setting.php',
@@ -81,6 +83,7 @@ function settings(string $key): string|array
             '/query/args/single.php',
             '/register/deactivation.php',
             '/register/activation.php',
+            '/register/uninstall.php',
             '/shortcode/code.php',
             '/shortcode/includes.php',
             '/widget/register.php',
