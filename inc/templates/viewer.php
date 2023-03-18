@@ -9,18 +9,16 @@ if (false === defined('ABSPATH')) {
 // Logged in and administrators only.
 if (
     true !== \is_user_logged_in() ||
-    true !== \current_user_can('administrator')
+    true !== \current_user_can('manage_options')
 ) {
     \wp_safe_redirect(\get_bloginfo('url'));
     exit;
 }
-
-$postID = \get_the_ID();
 ?>
 <!DOCTYPE html>
 <html <?php \language_attributes(); ?> class="no-js no-svg">
 <head>
-<title></title>
+<title><?php the_title(); ?></title>
 <meta charset="<?php \bloginfo('charset'); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -32,7 +30,7 @@ $postID = \get_the_ID();
 do_action('includes_before_posttype_content');
 
 if ('code' === filter_input(INPUT_GET, 'type')) {
-    $content = \get_post_meta($postID, 'includes_code', true);
+    $content = \get_post_meta(\get_the_ID(), 'includes_code', true);
 
     try {
         eval('?>'.html_entity_decode($content, ENT_QUOTES | ENT_XML1, 'UTF-8'));
@@ -44,7 +42,7 @@ if ('code' === filter_input(INPUT_GET, 'type')) {
         'the_content',
         \get_post_field(
             'post_content',
-            $postID
+            \get_the_ID()
         )
     );
 
