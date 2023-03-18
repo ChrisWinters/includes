@@ -1,0 +1,16 @@
+/**
+ * Bootstrap 5 Variable Overrides
+ */
+
+$blue: #2271b1 !default;
+$body-bg: #f0f0f1 !default;
+$body-color: #50575e !default;
+$link-hover-decoration: none !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 783px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;

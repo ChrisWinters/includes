@@ -1,8 +1,9 @@
 {
     "name": "includes",
-    "author": "Chris Winters",
-    "version": "4.1.1",
-    "license": "GPL-2.0",
+    "author": "Chris W.",
+    "version": "5.0.0",
+    "license": "GNU GPLv3",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "https://github.com/ChrisWinters/includes"
@@ -10,49 +11,32 @@
     "bugs": {
         "url": "https://github.com/ChrisWinters/includes/issues"
     },
-    "keywords": [
-        "wordpress",
-        "wordpress-plugin",
-        "bootstrap4",
-        "includes",
-        "includes-for-wordpress"
-    ],
     "scripts": {
-        "postinstall": "gulp assets"
+        "css": "npm-run-all css-build css-prefix css-minify",
+        "css-build": "sass --style expanded --no-source-map --no-error-css _src/scss/style.scss:assets/css/style.css",
+        "css-prefix": "postcss --config _src/postcss-config.js --replace \"assets/css/*.css\" \"!assets/css/*.min.css\"",
+        "css-minify": "cleancss -O1 --format breakWidth=1f --with-rebase --output assets/css/style.min.css \"assets/css/*.css\" \"!assets/css/*.min.css\"",
+        "translate": "wp-pot --src '**/*.php' --dest-file 'lang/includes.pot' --domain 'includes' --bug-report 'https://github.com/ChrisWinters/includes/issues'",
+        "version": "node ./_src/version.js",
+        "zip": "npm-run-all copy-files zip-files remove-zip",
+        "copy-files": "copyfiles -e ./_src/** -e ./node_modules/** -e ./.editorconfig -e ./.gitattributes -e ./.gitignore -e ./includes.zip -e ./package*.json -F ./* ./*/** zip/includes",
+        "zip-files": "node ./_src/zipFiles.js",
+        "remove-zip": "node ./_src/removeZip.js"
     },
-    "engines": {
-        "node": ">=8.0.0",
-        "npm": ">=6.5.0"
-    },
-    "devDependencies": {},
-    "dependencies": {
-        "lodash": "^4.17.15",
-        "lodash.template": "^4.5.0",
-        "moment": "^2.24.0",
-        "bootstrap": "^4.4.1",
-        "browser-sync": "^2.26.7",
-        "del": "^3.0.0",
-        "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^6.0.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-imagemin": "^5.0.3",
-        "gulp-line-ending-corrector": "^1.0.3",
-        "gulp-notify": "^3.2.0",
-        "gulp-remove-empty-lines": "^0.1.0",
-        "gulp-rename": "^1.4.0",
-        "gulp-replace": "^1.0.0",
-        "gulp-sass": "^4.1.0",
-        "gulp-sort": "^2.0.0",
-        "gulp-sourcemaps": "^2.6.4",
-        "gulp-strip-comments": "^2.5.2",
-        "gulp-strip-css-comments": "^2.0.0",
-        "gulp-uglify": "^3.0.1",
-        "gulp-uglifycss": "^1.1.0",
-        "gulp-wp-pot": "^2.4.2",
-        "inquirer": "^6.5.2",
-        "jquery": "^3.5.0",
-        "popper.js": "^1.16.1",
-        "require-dir": "^1.2.0",
-        "undertaker-forward-reference": "^1.0.2"
+    "devDependencies": {
+        "archiver": "^5.3.1",
+        "autoprefixer": "^10.4.14",
+        "bootstrap": "^5.2.3",
+        "clean-css-cli": "^5.6.2",
+        "copyfiles": "^2.4.1",
+        "dotenv-expand": "^10.0.0",
+        "fs-extra": "^11.1.0",
+        "inquirer": "^9.1.4",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.4.21",
+        "postcss-cli": "^10.1.0",
+        "replace-in-file": "^6.3.5",
+        "sass": "^1.59.3",
+        "wp-pot-cli": "^1.5.0"
     }
 }
