@@ -44,5 +44,16 @@ function update(array $postObject): string
         $status = 'updated';
     }
 
+    // Maybe delete empty widget option.
+    if (true === empty($postObject['shortcode_widget']) && 'error' !== $status) {
+        $optionName = 'widget_includes';
+        $widgetArray = (array) \get_option($optionName);
+
+        // Delete empty widget.
+        if (true !== empty($widgetArray) && 1 <= count($widgetArray)) {
+            \delete_option($optionName);
+        }
+    }
+
     return $status;
 }
