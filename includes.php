@@ -65,3 +65,14 @@ function requiredFiles(): void
     INCLUDES_FILE,
     '\Includes\Register\uninstall'
 );
+
+// Plugin update checker
+if (true === file_exists(dirname(__FILE__).'/puc/plugin-update-checker.php')) {
+    require_once dirname(__FILE__).'/puc/plugin-update-checker.php';
+
+    $includesPuc = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
+        'https://raw.githubusercontent.com/ChrisWinters/includes/master/updates.json',
+        __FILE__,
+        'includes'
+    );
+}
