@@ -14,6 +14,10 @@ if (false === defined('ABSPATH')) {
  */
 function postType(): array
 {
+    // Maybe get plugin menu position.
+    $getPosition = \Includes\Option\setting('menu_position');
+    $menuPosition = (true !== empty($getPosition)) ? (int) $getPosition : 80;
+
     return [
         'public' => true,
         'show_in_nav_menus' => false,
@@ -28,7 +32,7 @@ function postType(): array
         'rest_base' => false,
         'has_archive' => false,
         'hierarchical' => true,
-        'menu_position' => 26,
+        'menu_position' => $menuPosition,
         'capability_type' => 'page',
         'menu_icon' => 'dashicons-info',
         'taxonomies' => [
